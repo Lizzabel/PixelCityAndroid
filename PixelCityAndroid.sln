@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PixelCityAndroid.Plugins", "PixelCityAndroid.Plugins.csproj", "{04264467-1F9C-81B1-1702-5971F8CAA2B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PixelCityAndroid", "PixelCityAndroid.csproj", "{A2842204-FA6A-B4D9-42C4-2BCBA68C15FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PixelCityAndroid.Editor.Plugins", "PixelCityAndroid.Editor.Plugins.csproj", "{2AEC19DB-A33D-9438-CE41-266235425983}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{04264467-1F9C-81B1-1702-5971F8CAA2B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04264467-1F9C-81B1-1702-5971F8CAA2B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04264467-1F9C-81B1-1702-5971F8CAA2B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04264467-1F9C-81B1-1702-5971F8CAA2B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2842204-FA6A-B4D9-42C4-2BCBA68C15FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2842204-FA6A-B4D9-42C4-2BCBA68C15FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2842204-FA6A-B4D9-42C4-2BCBA68C15FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2842204-FA6A-B4D9-42C4-2BCBA68C15FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AEC19DB-A33D-9438-CE41-266235425983}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AEC19DB-A33D-9438-CE41-266235425983}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AEC19DB-A33D-9438-CE41-266235425983}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AEC19DB-A33D-9438-CE41-266235425983}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
