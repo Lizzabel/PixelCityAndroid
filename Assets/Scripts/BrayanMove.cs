@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BrayanMove : MonoBehaviour
-{
-   
+{ 
 	public GameObject Brayan;
 	public Rigidbody2D RiBo2D_Brayan;
 	public float Velocidad;
@@ -103,8 +102,9 @@ public class BrayanMove : MonoBehaviour
     public void Girar()
 	{ 
 		LadoDerecho = !LadoDerecho;
-		Vector3 ValorEscala = Brayan.transform.localScale;
+		Vector2 ValorEscala = Brayan.transform.localScale;
 		ValorEscala.x *= -1;
+
 		Brayan.transform.localScale = ValorEscala;
 
 	}
