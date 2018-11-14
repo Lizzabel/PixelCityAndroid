@@ -554,6 +554,7 @@ GameObject:
   m_Component:
   - component: {fileID: 337240942}
   - component: {fileID: 337240941}
+  - component: {fileID: 337240943}
   m_Layer: 0
   m_Name: MasterScript
   m_TagString: Untagged
@@ -597,6 +598,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &337240943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 337240940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90e0031f553bd493b8e0604cba4bff53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Portrait: 0
+  LandScapeRight: 1
 --- !u!1 &398536353
 GameObject:
   m_ObjectHideFlags: 0
