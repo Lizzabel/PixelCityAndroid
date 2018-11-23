@@ -255,6 +255,7 @@
     <Compile Include="Assets\Scripts\PuntosEnemigo.cs" />
     <Compile Include="Assets\Scripts\RotacionPantalla.cs" />
     <Compile Include="Assets\Scripts\SelectorNiveles.cs" />
+    <Compile Include="Assets\Scripts\Timer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemigo
   - Arepa
+  - BotonNiveles
   layers:
   - Default
   - TransparentFX
