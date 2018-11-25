@@ -8,8 +8,9 @@ public class BrayanMove : MonoBehaviour
 	public Rigidbody2D RiBo2D_Brayan;
 	public float Velocidad;
 
-	Animator animBrayan;
-	bool Der, Izq, Arriba, LadoDerecho, Anim;
+	public static Animator animBrayan;
+	bool Der, Izq, Arriba, Anim;
+	public static bool LadoDerecho;
 
 	[SerializeField]
 	private Transform[] GrupoDePos;
@@ -24,60 +25,75 @@ public class BrayanMove : MonoBehaviour
 	private bool atacando;
 
 	[SerializeField]
-	private bool airControl;
-
-	[SerializeField]
 	float fuerzaSalto = 5f;
+
+
+	private Vector3 offset;
+	public GameObject Camara;
+
+
+	public Transform PosArepa;
+	public GameObject ArepaPrefab;
+
 
     void Awake()
 	{
 		RiBo2D_Brayan = Brayan.GetComponent<Rigidbody2D>();
 		animBrayan = Brayan.GetComponent<Animator>();
+
+		offset = Camara.transform.position - Brayan.transform.position;
 	}
 
    
     void FixedUpdate() {
 
-
-		if (animBrayan.GetCurrentAnimatorStateInfo(0).IsName("Brayan_Attack"))
+		if (!BrayanPropiedades.Muerto)
 		{
-			atacando = true;
-		}else
-		{
-			atacando = false;
-		}
-
-		if (!atacando)
-		{
-			if (Der == true || Input.GetKey(KeyCode.D)) //quitar el input...
+			if (animBrayan.GetCurrentAnimatorStateInfo(0).IsName("Brayan_Attack"))
 			{
-				RiBo2D_Brayan.velocity = new Vector2(Velocidad, RiBo2D_Brayan.velocity.y);
-				if (LadoDerecho)
-				{
-					Girar();
-				}
+				atacando = true;
+
+			}
+			else
+			{
+				atacando = false;
 			}
 
-			if (Izq == true)
+
+			if (!atacando)
 			{
-				RiBo2D_Brayan.velocity = new Vector2(-Velocidad, RiBo2D_Brayan.velocity.y);
-				if (!LadoDerecho)
+				if (Der == true || Input.GetKey(KeyCode.D)) //quitar el input...
 				{
-					Girar();
+					RiBo2D_Brayan.velocity = new Vector2(Velocidad, RiBo2D_Brayan.velocity.y);
+					if (LadoDerecho)
+					{
+						Girar();
+					}
+
+				}
+
+				if (Izq == true)
+				{
+					RiBo2D_Brayan.velocity = new Vector2(-Velocidad, RiBo2D_Brayan.velocity.y);
+					if (!LadoDerecho)
+					{
+						Girar();
+					}
 				}
 			}
-		}
-		animBrayan.SetBool("Run", Anim);
+			animBrayan.SetBool("Run", Anim);
 
-		tocandoPiso = TocandoPiso();
+			tocandoPiso = TocandoPiso();
 
-		if (Input.GetKeyDown(KeyCode.Space)) // saltar, cambiar por swipe up
-		{
-			animBrayan.SetBool("Ground", false);
-			StartCoroutine(SaltarTime());
-		}else
-		{
-			animBrayan.SetBool("Ground", true);
+			if (Input.GetKeyDown(KeyCode.Space)) // saltar, cambiar por swipe up
+			{
+				animBrayan.SetBool("Ground", false);
+				StartCoroutine(SaltarTime());
+			}
+			else
+			{
+				animBrayan.SetBool("Ground", true);
+			}
 		}
 	}
     
@@ -129,8 +145,18 @@ public class BrayanMove : MonoBehaviour
 
 	public void Ataque(bool AnimAttack)
 	{
-		animBrayan.SetBool("Attack", AnimAttack);      
+		animBrayan.SetBool("Attack", AnimAttack);
+		if (AnimAttack)
+		{
+			Disparo();
+		}
 	}
+       
+	void Disparo()
+	{
+		Instantiate(ArepaPrefab, PosArepa.position, PosArepa.rotation);
+	}
+
 
 	private bool TocandoPiso()
 	{
@@ -153,4 +179,13 @@ public class BrayanMove : MonoBehaviour
 		}
 		return false;
 	}
+
+   
+	void LateUpdate()
+    {
+		Camara.transform.position = Brayan.transform.position + offset; //buscar la forma de bloquearlo en Y
+    }
+
+
+
 }

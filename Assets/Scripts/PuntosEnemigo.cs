@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PuntosEnemigo : MonoBehaviour {
-    public int puntos = 10;
-    Animator animEnemigo;
+    
+   Transform Transplayer;
+    //
+	public int puntos = 10;
+	Animator animEnemigo;
 
     //public GameObject enemigo; // lo quite porque vamos a obtenerlo directamente desde donde esta el codigo, no desde un masterScript
     public bool cerca;
@@ -14,6 +17,8 @@ public class PuntosEnemigo : MonoBehaviour {
 
     private void Start()
     {
+		Transplayer = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+
         animEnemigo = gameObject.GetComponent<Animator>();
         StartCoroutine(MuerteComprobador());
         rbenemigo = gameObject.GetComponent<Rigidbody2D>(); // ya no obtiene el componente desde una variable Gameobject publica sino que desde el propio gameobject de en donde esta el codigo
@@ -26,8 +31,29 @@ public class PuntosEnemigo : MonoBehaviour {
             puntos -= 2;
             Debug.Log(puntos);
         }
+
     }
-    IEnumerator MuerteComprobador()
+
+	private void OnTriggerEnter2D(Collider2D trigger)
+	{
+
+		if (trigger.gameObject.tag == "Player")
+        {
+			cerca = true;
+        }
+	}
+
+	void OnTriggerExit2D(Collider2D trigger)
+    {
+		if (trigger.gameObject.tag == "Player")
+        {
+			cerca = false;
+        }
+    }
+
+
+
+	IEnumerator MuerteComprobador()
     {
         yield return new WaitForSecondsRealtime(0.5f);
         if (puntos <= 0)
@@ -53,15 +79,17 @@ public class PuntosEnemigo : MonoBehaviour {
     {
         Correr();
         Morir();
+        
     }
 
     public void Correr()
     {
-        if (cerca)
+		if (cerca)
         {
-            rbenemigo.velocity = new Vector2(velocidad, rbenemigo.velocity.y);
-
+			transform.position = Vector2.MoveTowards(transform.position,
+			                        new Vector2(Transplayer.position.x, transform.position.y), velocidad * Time.deltaTime);
         }
+
         animEnemigo.SetBool("correr", cerca);
     }
 
