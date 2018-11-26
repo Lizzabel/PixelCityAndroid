@@ -860,7 +860,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colorEscena: {r: 0, g: 0, b: 0, a: 1}
-  nombreEscena: Barrio
+  nombreEscena: Nivel1
   tiempoEscena: 1.5
   panelMenu: {fileID: 1226701312}
   panelNiveles: {fileID: 916500266}
