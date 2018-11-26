@@ -26,7 +26,6 @@ public class SelectorNiveles : MonoBehaviour {
     private void Start()
     {
         LlenarLista();
-        //DeleteAll();
     }
 
 

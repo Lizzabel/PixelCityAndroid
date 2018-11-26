@@ -12,7 +12,12 @@ public class BotonesMenu : MonoBehaviour {
     public GameObject panelMenu;
     public GameObject panelNiveles;
     public GameObject panelOpciones;
+    AudioSource elAudio;
 
+    private void Start()
+    {
+        elAudio = gameObject.GetComponent<AudioSource>();
+    }
     public void Jugar()
     {
         Initiate.Fade(nombreEscena, colorEscena, tiempoEscena);
@@ -39,5 +44,9 @@ public class BotonesMenu : MonoBehaviour {
         panelOpciones.SetActive(true);
     }
 
+    public void MutearLosAudios()
+    {
+        elAudio.mute = !elAudio.mute;
+    }
 
 }
