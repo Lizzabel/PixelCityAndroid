@@ -34,7 +34,7 @@ public class SelectorNiveles : MonoBehaviour {
         foreach (var Nivel in ListaNiveles)
         {
             GameObject nuevoBoton = Instantiate(botonNivel) as GameObject;
-            BotonNiveles boton = nuevoBoton.GetComponent<BotonNiveles>();
+			PropiedadesBoton boton = nuevoBoton.GetComponent<PropiedadesBoton>();
             nuevoBoton.GetComponent<Image>().sprite = Nivel.imagenNivel;
             boton.NumeroNivel = Nivel.NumeroNivel;
             
@@ -86,7 +86,7 @@ public class SelectorNiveles : MonoBehaviour {
             GameObject[] TodosBotones = GameObject.FindGameObjectsWithTag("BotonNiveles");
             foreach (GameObject botones in TodosBotones)
             {
-                BotonNiveles boton = botones.GetComponent<BotonNiveles>();
+				PropiedadesBoton boton = botones.GetComponent<PropiedadesBoton>();
                 PlayerPrefs.SetInt("Nivel" + boton.NumeroNivel, boton.Desbloqueado);
             }
         }     

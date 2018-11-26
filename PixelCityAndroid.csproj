@@ -335,16 +335,16 @@
     <Compile Include="Assets\Scripts\ArepaFlotante.cs" />
     <Compile Include="Assets\Scripts\BackGroundScroll.cs" />
     <Compile Include="Assets\Scripts\BotonesMenu.cs" />
-    <Compile Include="Assets\Scripts\BotonNiveles.cs" />
     <Compile Include="Assets\Scripts\BrayanMove.cs" />
     <Compile Include="Assets\Scripts\BrayanPropiedades.cs" />
     <Compile Include="Assets\Scripts\Fader\Fader.cs" />
     <Compile Include="Assets\Scripts\Fader\Initiate.cs" />
+    <Compile Include="Assets\Scripts\NivelManager.cs" />
+    <Compile Include="Assets\Scripts\PropiedadesBoton.cs" />
     <Compile Include="Assets\Scripts\PuntosEnemigo.cs" />
     <Compile Include="Assets\Scripts\PuntosVida.cs" />
     <Compile Include="Assets\Scripts\RotacionPantalla.cs" />
     <Compile Include="Assets\Scripts\SelectorNiveles.cs" />
-    <Compile Include="Assets\Scripts\Timer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
