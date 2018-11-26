@@ -47,10 +47,6 @@ public class SelectorNiveles : MonoBehaviour {
                 boton.candado.SetActive(false);
                 
             }
-            if (PlayerPrefs.HasKey("Nivel1"))
-            {
-                boton.candado.SetActive(false);
-            }
 
             boton.Desbloqueado = Nivel.Desbloqueado;
             boton.GetComponent<Button>().interactable = Nivel.Interactuable;
@@ -70,9 +66,13 @@ public class SelectorNiveles : MonoBehaviour {
             {
                 boton.Estrella3.SetActive(true);
             }
-
+			if (Nivel.Interactuable == true)
+			{
+				boton.candado.SetActive(false);
+			}
             nuevoBoton.transform.SetParent(Spacer, false);
         }
+
         GuardarCambios();
     }
     
@@ -96,6 +96,8 @@ public class SelectorNiveles : MonoBehaviour {
     void DeleteAll()
     {
         PlayerPrefs.DeleteAll();
+		Debug.Log("DeleteAll");
+		Initiate.Fade("Menu", Color.black, 1.0f);
     }
 
 
