@@ -62,7 +62,7 @@ public class BrayanMove : MonoBehaviour
 
 			if (!atacando)
 			{
-				if (Der == true || Input.GetKey(KeyCode.D)) //quitar el input...
+				if (Der == true)
 				{
 					RiBo2D_Brayan.velocity = new Vector2(Velocidad, RiBo2D_Brayan.velocity.y);
 					if (LadoDerecho)
@@ -85,7 +85,7 @@ public class BrayanMove : MonoBehaviour
 
 			tocandoPiso = TocandoPiso();
 
-			if (Input.GetKeyDown(KeyCode.Space)) // saltar, cambiar por swipe up
+			if ((Input.GetKeyDown(KeyCode.Space)) || (SwipeManager.SwipeDirection == Swipe.Up)) // saltar, cambiar por swipe up
 			{
 				animBrayan.SetBool("Ground", false);
 				StartCoroutine(SaltarTime());
@@ -94,7 +94,10 @@ public class BrayanMove : MonoBehaviour
 			{
 				animBrayan.SetBool("Ground", true);
 			}
+         
 		}
+        
+
 	}
     
 	public void MovimientoDer()
@@ -189,9 +192,12 @@ public class BrayanMove : MonoBehaviour
    
 	void LateUpdate()
     {
-		Camara.transform.position = Brayan.transform.position + offset; //buscar la forma de bloquearlo en Y
+		Camara.transform.position = new Vector3(Brayan.transform.position.x, Camara.transform.position.y, Camara.transform.position.z);
+
+
     }
 
+    
 
 
 }

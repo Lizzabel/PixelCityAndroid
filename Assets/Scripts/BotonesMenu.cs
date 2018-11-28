@@ -24,6 +24,12 @@ public class BotonesMenu : MonoBehaviour {
         elAudio = gameObject.GetComponent<AudioSource>();
         imgVolumen = botonVolumen.GetComponent<Image>();
         imgVolumen.sprite = muted[0];
+
+		if (PlayerPrefs.GetInt("MusicaOn") == 0)
+        {
+            MutearLosAudios();
+        }
+
     }
     public void Jugar()
     {
@@ -60,6 +66,14 @@ public class BotonesMenu : MonoBehaviour {
         {
             numeroMute = 0;
         }
+
+		if (!elAudio.mute)
+		{
+			PlayerPrefs.SetInt("MusicaOn", 1);
+		}else
+		{
+			PlayerPrefs.SetInt("MusicaOn", 0);
+		}
     }
 
 

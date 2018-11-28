@@ -346,6 +346,7 @@
     <Compile Include="Assets\Scripts\PuntosVida.cs" />
     <Compile Include="Assets\Scripts\RotacionPantalla.cs" />
     <Compile Include="Assets\Scripts\SelectorNiveles.cs" />
+    <Compile Include="Assets\Scripts\SwipeManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
