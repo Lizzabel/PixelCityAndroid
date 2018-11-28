@@ -5,7 +5,7 @@ using UnityEngine;
 public class BrayanPropiedades : MonoBehaviour {
 
     
-	public int danno = 10;
+	public float danno = 10f;
 	public static bool Muerto;
 	public static bool Atacando;
 
@@ -16,10 +16,15 @@ public class BrayanPropiedades : MonoBehaviour {
 			PuntosVida.vida -= danno;
 			Atacando = true;
 
-			if (PuntosVida.vida <= 0)
+			PuntosVida.barraVida.fillAmount = PuntosVida.vida / PuntosVida.maxVida;
+
+			if (PuntosVida.vida <= 0.0f)
 			{
 				Muerto = true;
 				BrayanMove.animBrayan.SetBool("Die",Muerto); //funciona
+				Destroy(gameObject.GetComponent<BoxCollider2D>());
+				Destroy(gameObject.GetComponent<Rigidbody2D>());
+				Destroy(gameObject.GetComponent<CircleCollider2D>());
 			}
 		}else
 		{

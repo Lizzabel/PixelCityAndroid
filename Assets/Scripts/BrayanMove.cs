@@ -146,15 +146,21 @@ public class BrayanMove : MonoBehaviour
 	public void Ataque(bool AnimAttack)
 	{
 		animBrayan.SetBool("Attack", AnimAttack);
-		if (AnimAttack)
+		if (!AnimAttack)
 		{
-			Disparo();
+			StartCoroutine(EsperarAtaque());
 		}
 	}
        
 	void Disparo()
 	{
 		Instantiate(ArepaPrefab, PosArepa.position, PosArepa.rotation);
+	}
+
+	IEnumerator EsperarAtaque()
+	{
+		yield return new WaitForSecondsRealtime(0.25f);
+		Disparo();
 	}
 
 

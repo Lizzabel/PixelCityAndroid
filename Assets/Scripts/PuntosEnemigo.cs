@@ -5,32 +5,37 @@ using UnityEngine;
 public class PuntosEnemigo : MonoBehaviour {
     
    Transform Transplayer;
-    //
-	public int puntos = 10;
-	Animator animEnemigo;
+	//
 
-    //public GameObject enemigo; // lo quite porque vamos a obtenerlo directamente desde donde esta el codigo, no desde un masterScript
+	public float vidaEnemigo = 100f;
+	public float dannoEnemigo = 20f;
+	Animator animEnemigo;
+    
     public bool cerca;
     public bool morir;
     Rigidbody2D rbenemigo;
     public float velocidad;
 
-    private void Start()
-    {
+	private void Start()
+	{
 		Transplayer = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
 
-        animEnemigo = gameObject.GetComponent<Animator>();
-        StartCoroutine(MuerteComprobador());
-        rbenemigo = gameObject.GetComponent<Rigidbody2D>(); // ya no obtiene el componente desde una variable Gameobject publica sino que desde el propio gameobject de en donde esta el codigo
-    }
+		animEnemigo = gameObject.GetComponent<Animator>();
+		rbenemigo = gameObject.GetComponent<Rigidbody2D>();
+	}
 
     private void OnCollisionEnter2D(Collision2D colisionEnemigo)
     {
         if (colisionEnemigo.gameObject.tag == "Arepa")
         {
-            puntos -= 2;
-            Debug.Log(puntos);
+			Debug.Log(vidaEnemigo);
+			StartCoroutine(MuerteComprobador());
         }
+
+		if (colisionEnemigo.gameObject.tag == "Player")
+		{
+			StartCoroutine(EsperarCerca());
+		}
 
     }
 
@@ -51,46 +56,49 @@ public class PuntosEnemigo : MonoBehaviour {
         }
     }
 
-
+	IEnumerator EsperarCerca()
+	{
+		cerca = false;
+		yield return new WaitForSecondsRealtime(0.5f);
+		cerca = true;
+	}
 
 	IEnumerator MuerteComprobador()
     {
-        yield return new WaitForSecondsRealtime(0.5f);
-        if (puntos <= 0)
+		vidaEnemigo -= dannoEnemigo;
+		if (vidaEnemigo <= 0f)
         {
             animEnemigo.SetBool("muerte", true);
             Destroy(gameObject.GetComponent<Collider2D>());
 
-            //Destroy(gameObject.GetComponent<Rigidbody2D>()); lo cambie porque ya en el estar se obtiene el componente
+
             Destroy(rbenemigo);
             yield return new WaitForSecondsRealtime(2.5f);
             Destroy(gameObject);
         }
-
-        StartCoroutine(MuerteComprobador());
     }
-
-
-    /// <summary>
-    /// Union de codigos Isa
-    /// </summary>
-
+       
     private void Update()
     {
         Correr();
         Morir();
-        
     }
 
     public void Correr()
     {
-		if (cerca)
-        {
-			transform.position = Vector2.MoveTowards(transform.position,
-			                        new Vector2(Transplayer.position.x, transform.position.y), velocidad * Time.deltaTime);
-        }
+		if (!BrayanPropiedades.Muerto)
+		{
+			if (cerca)
+			{
+				transform.position = Vector2.MoveTowards(transform.position,
+										new Vector2(Transplayer.position.x, transform.position.y), velocidad * Time.deltaTime);
+			}
 
-        animEnemigo.SetBool("correr", cerca);
+			animEnemigo.SetBool("correr", cerca);
+		}else
+		{
+			animEnemigo.SetBool("correr", false);
+		}
     }
 
     public void Morir()

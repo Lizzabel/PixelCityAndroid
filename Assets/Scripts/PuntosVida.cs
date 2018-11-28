@@ -5,26 +5,24 @@ using UnityEngine.UI;
 
 public class PuntosVida : MonoBehaviour {
 
-	public static int vida;
+	public static float vida;
 	public static int puntos;
+	public GameObject barVidaObject;
+	public static Image barraVida;
+	public static float maxVida = 100f;
 
 	public Text PuntosText;
 
 	private void Awake()
 	{
-		vida = 100;
+		vida = 100f;
 		puntos = 0;
 	}
 
 	private void Start()
 	{
         StartCoroutine(Esperar());
-	}
-
-	public void Salud()
-	{
-		//PuntosText.text = puntos.ToString();
-		Debug.Log("falta configurar los corazones");
+		barraVida = barVidaObject.GetComponent<Image>();
 	}
 
 	public void Puntaje()
@@ -34,10 +32,6 @@ public class PuntosVida : MonoBehaviour {
 
 	IEnumerator Esperar()
 	{
-		if (BrayanPropiedades.Atacando)
-		{
-			Salud(); // cambiar esto por vida...
-        }
 		if (ArepaFlotante.ContarArepa)
 		{
 			Puntaje();

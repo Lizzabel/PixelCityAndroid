@@ -8,6 +8,14 @@ public class ArepaDisparo : MonoBehaviour {
 	public float velocidad;
 	public Rigidbody2D RB_Arepa;
 
+	void OnCollisionEnter2D(Collision2D collision)
+	{
+		if (collision.gameObject.tag == "Enemigo")
+		{
+			Destroy(gameObject);
+		}
+	}
+
 	void Start () {
 
 		if (!BrayanMove.LadoDerecho)

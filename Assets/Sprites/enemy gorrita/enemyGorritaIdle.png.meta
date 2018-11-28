@@ -61,9 +61,8 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spritePixelsToUnits: 100
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -104,9 +103,9 @@ TextureImporter:
     overridden: 1
     androidETC2FallbackOverride: 0
   - buildTarget: Android
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 47
+    textureFormat: 54
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -120,9 +119,9 @@ TextureImporter:
       name: enemyGorritaIdle_0
       rect:
         serializedVersion: 2
-        x: 63
+        x: 69
         y: 1008
-        width: 43
+        width: 32
         height: 126
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -134,9 +133,9 @@ TextureImporter:
       name: enemyGorritaIdle_1
       rect:
         serializedVersion: 2
-        x: 217
+        x: 222
         y: 1008
-        width: 43
+        width: 33
         height: 126
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -148,9 +147,9 @@ TextureImporter:
       name: enemyGorritaIdle_2
       rect:
         serializedVersion: 2
-        x: 63
+        x: 67
         y: 882
-        width: 43
+        width: 36
         height: 126
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -162,9 +161,9 @@ TextureImporter:
       name: enemyGorritaIdle_3
       rect:
         serializedVersion: 2
-        x: 217
+        x: 216
         y: 882
-        width: 43
+        width: 46
         height: 126
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -176,9 +175,9 @@ TextureImporter:
       name: enemyGorritaIdle_4
       rect:
         serializedVersion: 2
-        x: 63
+        x: 62
         y: 756
-        width: 43
+        width: 46
         height: 126
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -190,9 +189,9 @@ TextureImporter:
       name: enemyGorritaIdle_5
       rect:
         serializedVersion: 2
-        x: 217
+        x: 216
         y: 756
-        width: 43
+        width: 46
         height: 126
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -204,9 +203,9 @@ TextureImporter:
       name: enemyGorritaIdle_6
       rect:
         serializedVersion: 2
-        x: 63
+        x: 62
         y: 630
-        width: 43
+        width: 46
         height: 126
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -218,9 +217,9 @@ TextureImporter:
       name: enemyGorritaIdle_7
       rect:
         serializedVersion: 2
-        x: 217
+        x: 216
         y: 630
-        width: 43
+        width: 46
         height: 126
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -232,9 +231,9 @@ TextureImporter:
       name: enemyGorritaIdle_8
       rect:
         serializedVersion: 2
-        x: 63
+        x: 62
         y: 504
-        width: 43
+        width: 46
         height: 126
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -246,9 +245,9 @@ TextureImporter:
       name: enemyGorritaIdle_9
       rect:
         serializedVersion: 2
-        x: 217
+        x: 216
         y: 504
-        width: 43
+        width: 46
         height: 126
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -260,9 +259,9 @@ TextureImporter:
       name: enemyGorritaIdle_10
       rect:
         serializedVersion: 2
-        x: 63
+        x: 62
         y: 378
-        width: 43
+        width: 46
         height: 126
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -274,9 +273,9 @@ TextureImporter:
       name: enemyGorritaIdle_11
       rect:
         serializedVersion: 2
-        x: 217
+        x: 216
         y: 378
-        width: 43
+        width: 47
         height: 126
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -288,9 +287,9 @@ TextureImporter:
       name: enemyGorritaIdle_12
       rect:
         serializedVersion: 2
-        x: 63
+        x: 62
         y: 252
-        width: 43
+        width: 48
         height: 126
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -302,9 +301,9 @@ TextureImporter:
       name: enemyGorritaIdle_13
       rect:
         serializedVersion: 2
-        x: 217
+        x: 216
         y: 252
-        width: 43
+        width: 47
         height: 126
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -316,9 +315,9 @@ TextureImporter:
       name: enemyGorritaIdle_14
       rect:
         serializedVersion: 2
-        x: 63
+        x: 62
         y: 126
-        width: 43
+        width: 47
         height: 126
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -330,9 +329,9 @@ TextureImporter:
       name: enemyGorritaIdle_15
       rect:
         serializedVersion: 2
-        x: 217
+        x: 216
         y: 126
-        width: 43
+        width: 46
         height: 126
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -344,9 +343,9 @@ TextureImporter:
       name: enemyGorritaIdle_16
       rect:
         serializedVersion: 2
-        x: 63
+        x: 62
         y: 0
-        width: 43
+        width: 47
         height: 126
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -360,7 +359,7 @@ TextureImporter:
         serializedVersion: 2
         x: 217
         y: 0
-        width: 43
+        width: 45
         height: 126
       alignment: 0
       pivot: {x: 0.5, y: 0.5}

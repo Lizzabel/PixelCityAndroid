@@ -34,7 +34,8 @@ public class MenuPausa : MonoBehaviour {
 
     public void ActivarMenuPrincipal()
     {
-        SceneManager.LoadScene(0);
+		DesactivarPausa();
+		Initiate.Fade("Menu", Color.black, 1.0f);
     }
 
     public void MutearLosAudios()
