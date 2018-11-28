@@ -8,9 +8,9 @@
       <File FileName="Assets/Scripts/PropiedadesBoton.cs" Line="7" Column="2" />
       <File FileName="Assets/Scripts/BotonesMenu.cs" Line="30" Column="32" />
       <File FileName="Assets/Scripts/MenuPausa.cs" Line="37" Column="21" />
-      <File FileName="Assets/Scripts/PuntosVida.cs" Line="28" Column="39" />
-      <File FileName="Assets/Scripts/PuntosEnemigo.cs" Line="45" Column="2" />
-      <File FileName="Assets/Scripts/BrayanPropiedades.cs" Line="19" Column="75" />
+      <File FileName="Assets/Scripts/PuntosVida.cs" Line="25" Column="51" />
+      <File FileName="Assets/Scripts/PuntosEnemigo.cs" Line="100" Column="39" />
+      <File FileName="Assets/Scripts/BrayanPropiedades.cs" Line="27" Column="58" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.PixelCityAndroid PreferredExecutionTarget="Unity.Editor" />
