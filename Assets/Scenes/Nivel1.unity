@@ -201,6 +201,7 @@ GameObject:
   - component: {fileID: 41614828}
   - component: {fileID: 41614827}
   - component: {fileID: 41614829}
+  - component: {fileID: 41614831}
   m_Layer: 0
   m_Name: EnemyChica
   m_TagString: Enemigo
@@ -368,6 +369,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.7398615, y: 2.2679396}
   m_EdgeRadius: 0
+--- !u!68 &41614831
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 41614823}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: d803c2937117ea94e8be021e9cd0c433, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.02}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.12103113, y: 0.38807648}
+  - {x: 0.0024909973, y: 0.43528312}
+  - {x: 0.11651866, y: 0.39033276}
 --- !u!1 &50013900
 GameObject:
   m_ObjectHideFlags: 0
@@ -1795,6 +1814,7 @@ GameObject:
   - component: {fileID: 479804323}
   - component: {fileID: 479804320}
   - component: {fileID: 479804322}
+  - component: {fileID: 479804324}
   m_Layer: 0
   m_Name: EnemyGorrita
   m_TagString: Enemigo
@@ -1962,6 +1982,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.7398615, y: 2.2679396}
   m_EdgeRadius: 0
+--- !u!68 &479804324
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 479804316}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: d803c2937117ea94e8be021e9cd0c433, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.01, y: 0.04}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.12103113, y: 0.38807648}
+  - {x: 0.0024909973, y: 0.43528312}
+  - {x: 0.11651866, y: 0.39033276}
 --- !u!1 &503258757
 GameObject:
   m_ObjectHideFlags: 0
@@ -2581,6 +2619,7 @@ GameObject:
   - component: {fileID: 650616270}
   - component: {fileID: 650616268}
   - component: {fileID: 650616269}
+  - component: {fileID: 650616271}
   m_Layer: 0
   m_Name: EnemySenora
   m_TagString: Enemigo
@@ -2748,6 +2787,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.7398615, y: 2.2679396}
   m_EdgeRadius: 0
+--- !u!68 &650616271
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 650616263}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: d803c2937117ea94e8be021e9cd0c433, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.01, y: -0.01}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.12103113, y: 0.38807648}
+  - {x: 0.0024909973, y: 0.43528312}
+  - {x: 0.11651866, y: 0.39033276}
 --- !u!1 &668022854
 GameObject:
   m_ObjectHideFlags: 0
@@ -3238,7 +3295,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 897637783}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: df1d1ebb9416b6c439f8285c54275ab5, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -4772,6 +4829,7 @@ GameObject:
   - component: {fileID: 1923350604}
   - component: {fileID: 1923350603}
   - component: {fileID: 1923350602}
+  - component: {fileID: 1923350608}
   - component: {fileID: 1923350601}
   m_Layer: 0
   m_Name: Enemy
@@ -4808,7 +4866,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.008380543, y: -0.13014555}
+  m_Offset: {x: -0.008380547, y: -0.120128885}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4819,7 +4877,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.21946082, y: 0.99530876}
+  m_Size: {x: 0.21946082, y: 1.0153421}
   m_EdgeRadius: 0
 --- !u!61 &1923350603
 BoxCollider2D:
@@ -4940,3 +4998,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &1923350608
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1923350600}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: d803c2937117ea94e8be021e9cd0c433, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.12103113, y: 0.38807648}
+  - {x: 0.0024909973, y: 0.43528312}
+  - {x: 0.11651866, y: 0.39033276}

@@ -148,11 +148,14 @@ public class BrayanMove : MonoBehaviour
 
 	public void Ataque(bool AnimAttack)
 	{
-		animBrayan.SetBool("Attack", AnimAttack);
-		if (!AnimAttack)
-		{
-			StartCoroutine(EsperarAtaque());
-		}
+        animBrayan.SetBool("Attack", AnimAttack);
+        if (!animBrayan.GetCurrentAnimatorStateInfo(0).IsName("Brayan_Attack"))
+        {
+            if (!AnimAttack)
+            {
+                StartCoroutine(EsperarAtaque());
+            }
+        }
 	}
        
 	void Disparo()

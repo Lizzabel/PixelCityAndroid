@@ -22,13 +22,18 @@ public class BrayanPropiedades : MonoBehaviour {
 			{
 				Muerto = true;
 				BrayanMove.animBrayan.SetBool("Die",Muerto); //funciona
-				Destroy(gameObject.GetComponent<BoxCollider2D>());
-				Destroy(gameObject.GetComponent<Rigidbody2D>());
-				Destroy(gameObject.GetComponent<CircleCollider2D>());
+                StartCoroutine(EsperarMuerte());
 			}
 		}else
 		{
 			Atacando = false;
 		}
 	}
+    IEnumerator EsperarMuerte()
+    {
+        yield return new WaitForSecondsRealtime(2f);
+        Destroy(gameObject.GetComponent<BoxCollider2D>());
+        Destroy(gameObject.GetComponent<Rigidbody2D>());
+        Destroy(gameObject.GetComponent<CircleCollider2D>());
+    }
 }

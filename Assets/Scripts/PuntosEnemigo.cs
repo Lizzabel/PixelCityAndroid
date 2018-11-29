@@ -70,12 +70,13 @@ public class PuntosEnemigo : MonoBehaviour {
 		vidaEnemigo -= dannoEnemigo;
 		if (vidaEnemigo <= 0f)
         {
-            animEnemigo.SetBool("muerte", true);
-            Destroy(gameObject.GetComponent<Collider2D>());
-
-
+            morir = true;
+            Morir();
+            Destroy(gameObject.GetComponent<BoxCollider2D>());
+            Destroy(gameObject.GetComponent<EdgeCollider2D>());
             Destroy(rbenemigo);
-            yield return new WaitForSecondsRealtime(2.5f);
+
+            yield return new WaitForSecondsRealtime(3.5f);
             Destroy(gameObject);
         }
     }
@@ -83,7 +84,6 @@ public class PuntosEnemigo : MonoBehaviour {
     private void Update()
     {
         Correr();
-        Morir();
     }
 
     public void Correr()
@@ -92,13 +92,15 @@ public class PuntosEnemigo : MonoBehaviour {
 		{
             if (cerca)
             {
-                transform.position = Vector2.MoveTowards(transform.position,
+                if (vidaEnemigo > 0f)
+                {
+                    transform.position = Vector2.MoveTowards(transform.position,
                                         new Vector2(Transplayer.position.x, transform.position.y), velocidad * Time.deltaTime);
-                //
+                    //
 
-                pos = Transplayer.position.x - transform.position.x;
-                Girar();
-
+                    pos = Transplayer.position.x - transform.position.x;
+                    Girar();
+                }
             }
 
 			animEnemigo.SetBool("correr", cerca);
@@ -110,11 +112,8 @@ public class PuntosEnemigo : MonoBehaviour {
 
     public void Morir()
     {
-        if (morir)
-        {
-            cerca = false;
-            animEnemigo.SetBool("muerte", morir);
-        }
+       cerca = false;
+       animEnemigo.SetBool("muerte", morir);
     }
 
     public void Girar()
