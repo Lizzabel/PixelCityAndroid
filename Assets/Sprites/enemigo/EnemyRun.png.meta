@@ -1,7 +1,5 @@
 fileFormatVersion: 2
 guid: 3cf40af3f918449c5af73f1764adc9dd
-timeCreated: 1540419306
-licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: BrayanRun_0
@@ -54,8 +52,9 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -112,12 +111,12 @@ TextureImporter:
       name: BrayanRun_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 8
         y: 126
-        width: 112
+        width: 69
         height: 126
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -126,12 +125,12 @@ TextureImporter:
       name: BrayanRun_1
       rect:
         serializedVersion: 2
-        x: 112
+        x: 127
         y: 126
-        width: 112
+        width: 55
         height: 126
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -140,12 +139,12 @@ TextureImporter:
       name: BrayanRun_2
       rect:
         serializedVersion: 2
-        x: 224
+        x: 237
         y: 126
-        width: 112
+        width: 59
         height: 126
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -154,12 +153,12 @@ TextureImporter:
       name: BrayanRun_3
       rect:
         serializedVersion: 2
-        x: 336
+        x: 344
         y: 126
-        width: 112
+        width: 69
         height: 126
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -168,12 +167,12 @@ TextureImporter:
       name: BrayanRun_4
       rect:
         serializedVersion: 2
-        x: 448
+        x: 451
         y: 126
-        width: 112
+        width: 79
         height: 126
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -182,12 +181,12 @@ TextureImporter:
       name: BrayanRun_5
       rect:
         serializedVersion: 2
-        x: 0
+        x: 2
         y: 0
-        width: 112
+        width: 79
         height: 126
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -196,12 +195,12 @@ TextureImporter:
       name: BrayanRun_6
       rect:
         serializedVersion: 2
-        x: 112
+        x: 119
         y: 0
-        width: 112
+        width: 70
         height: 126
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -210,12 +209,12 @@ TextureImporter:
       name: BrayanRun_7
       rect:
         serializedVersion: 2
-        x: 224
+        x: 237
         y: 0
-        width: 112
+        width: 59
         height: 126
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -224,12 +223,12 @@ TextureImporter:
       name: BrayanRun_8
       rect:
         serializedVersion: 2
-        x: 336
+        x: 349
         y: 0
-        width: 112
+        width: 59
         height: 126
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

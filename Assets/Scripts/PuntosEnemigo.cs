@@ -16,7 +16,9 @@ public class PuntosEnemigo : MonoBehaviour {
     Rigidbody2D rbenemigo;
     public float velocidad;
 
-	private void Start()
+    float pos;
+
+    private void Start()
 	{
 		Transplayer = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
 
@@ -88,11 +90,16 @@ public class PuntosEnemigo : MonoBehaviour {
     {
 		if (!BrayanPropiedades.Muerto)
 		{
-			if (cerca)
-			{
-				transform.position = Vector2.MoveTowards(transform.position,
-										new Vector2(Transplayer.position.x, transform.position.y), velocidad * Time.deltaTime);
-			}
+            if (cerca)
+            {
+                transform.position = Vector2.MoveTowards(transform.position,
+                                        new Vector2(Transplayer.position.x, transform.position.y), velocidad * Time.deltaTime);
+                //
+
+                pos = Transplayer.position.x - transform.position.x;
+                Girar();
+
+            }
 
 			animEnemigo.SetBool("correr", cerca);
 		}else
@@ -113,7 +120,16 @@ public class PuntosEnemigo : MonoBehaviour {
     public void Girar()
     {
         Vector2 giro = gameObject.transform.localScale;
-        giro.x *= -1;
+        //giro.x *= -1;
+
+        if (pos > 0)
+        {
+            giro.x = 3;
+        }
+        else if (pos < 0)
+        {
+            giro.x = -3;
+        }
         gameObject.transform.localScale = giro;
     }
 

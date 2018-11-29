@@ -1,24 +1,21 @@
 fileFormatVersion: 2
-guid: 2ba9e737979104c4c8299d3ab99ff6e5
-timeCreated: 1540422104
-licenseType: Free
+guid: 3a289814cca87fb478620534793b91e9
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Brayan_Attack_0
-    21300002: Brayan_Attack_1
-    21300004: Brayan_Attack_2
-    21300006: Brayan_Attack_3
-    21300008: Brayan_Attack_4
-    21300010: Brayan_Attack_5
-    21300012: Brayan_Attack_6
-    21300014: Brayan_Attack_7
-    21300016: Brayan_Attack_8
-    21300018: Brayan_Attack_9
-    21300020: Brayan_Attack_10
-    21300022: Brayan_Attack_11
-    21300024: Brayan_Attack_12
-    21300026: Brayan_Attack_13
-    21300028: Brayan_Attack_14
+    21300000: EnemyKO_0
+    21300002: EnemyKO_1
+    21300004: EnemyKO_2
+    21300006: EnemyKO_3
+    21300008: EnemyKO_4
+    21300010: EnemyKO_5
+    21300012: EnemyKO_6
+    21300014: EnemyKO_7
+    21300016: EnemyKO_8
+    21300018: EnemyKO_9
+    21300020: EnemyKO_10
+    21300022: EnemyKO_11
+    21300024: EnemyKO_12
+    21300026: EnemyKO_13
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -60,8 +57,9 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -94,12 +92,12 @@ TextureImporter:
   - buildTarget: iPhone
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 33
+    textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 1
+    overridden: 0
     androidETC2FallbackOverride: 0
   - buildTarget: Android
     maxTextureSize: 2048
@@ -115,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Brayan_Attack_0
+      name: EnemyKO_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 264
-        width: 118
-        height: 132
+        y: 756
+        width: 154
+        height: 126
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -129,13 +127,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Brayan_Attack_1
+      name: EnemyKO_1
       rect:
         serializedVersion: 2
-        x: 118
-        y: 264
-        width: 118
-        height: 132
+        x: 154
+        y: 756
+        width: 154
+        height: 126
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,55 +141,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Brayan_Attack_2
-      rect:
-        serializedVersion: 2
-        x: 236
-        y: 264
-        width: 118
-        height: 132
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Brayan_Attack_3
-      rect:
-        serializedVersion: 2
-        x: 354
-        y: 264
-        width: 118
-        height: 132
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Brayan_Attack_4
-      rect:
-        serializedVersion: 2
-        x: 472
-        y: 264
-        width: 118
-        height: 132
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Brayan_Attack_5
+      name: EnemyKO_2
       rect:
         serializedVersion: 2
         x: 0
-        y: 132
-        width: 118
-        height: 132
+        y: 630
+        width: 154
+        height: 126
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,13 +155,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Brayan_Attack_6
+      name: EnemyKO_3
       rect:
         serializedVersion: 2
-        x: 118
-        y: 132
-        width: 118
-        height: 132
+        x: 154
+        y: 630
+        width: 154
+        height: 126
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,13 +169,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Brayan_Attack_7
+      name: EnemyKO_4
       rect:
         serializedVersion: 2
-        x: 236
-        y: 132
-        width: 118
-        height: 132
+        x: 0
+        y: 504
+        width: 154
+        height: 126
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -227,13 +183,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Brayan_Attack_8
+      name: EnemyKO_5
       rect:
         serializedVersion: 2
-        x: 354
-        y: 132
-        width: 118
-        height: 132
+        x: 154
+        y: 504
+        width: 154
+        height: 126
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -241,13 +197,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Brayan_Attack_9
+      name: EnemyKO_6
       rect:
         serializedVersion: 2
-        x: 472
-        y: 132
-        width: 118
-        height: 132
+        x: 0
+        y: 378
+        width: 154
+        height: 126
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -255,13 +211,83 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Brayan_Attack_10
+      name: EnemyKO_7
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 378
+        width: 154
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyKO_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 252
+        width: 154
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyKO_9
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 252
+        width: 154
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyKO_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 126
+        width: 154
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyKO_11
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 126
+        width: 154
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyKO_12
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 118
-        height: 132
+        width: 154
+        height: 126
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -269,55 +295,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Brayan_Attack_11
+      name: EnemyKO_13
       rect:
         serializedVersion: 2
-        x: 118
+        x: 154
         y: 0
-        width: 118
-        height: 132
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Brayan_Attack_12
-      rect:
-        serializedVersion: 2
-        x: 236
-        y: 0
-        width: 118
-        height: 132
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Brayan_Attack_13
-      rect:
-        serializedVersion: 2
-        x: 354
-        y: 0
-        width: 118
-        height: 132
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Brayan_Attack_14
-      rect:
-        serializedVersion: 2
-        x: 472
-        y: 0
-        width: 118
-        height: 132
+        width: 154
+        height: 126
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
