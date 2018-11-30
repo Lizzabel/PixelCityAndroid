@@ -8,6 +8,7 @@ public class BrayanPropiedades : MonoBehaviour {
 	public float danno = 10f;
 	public static bool Muerto;
 	public static bool Atacando;
+    public GameObject GameOver; 
 
 	private void OnCollisionEnter2D(Collision2D collision)
 	{
@@ -35,5 +36,6 @@ public class BrayanPropiedades : MonoBehaviour {
         Destroy(gameObject.GetComponent<BoxCollider2D>());
         Destroy(gameObject.GetComponent<Rigidbody2D>());
         Destroy(gameObject.GetComponent<CircleCollider2D>());
+        GameOver.SetActive(true);
     }
 }

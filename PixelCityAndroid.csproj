@@ -255,11 +255,13 @@
     <Compile Include="Assets\Scripts\BrayanPropiedades.cs" />
     <Compile Include="Assets\Scripts\Fader\Fader.cs" />
     <Compile Include="Assets\Scripts\Fader\Initiate.cs" />
+    <Compile Include="Assets\Scripts\GameOver.cs" />
     <Compile Include="Assets\Scripts\MenuPausa.cs" />
     <Compile Include="Assets\Scripts\NivelManager.cs" />
     <Compile Include="Assets\Scripts\PropiedadesBoton.cs" />
     <Compile Include="Assets\Scripts\PuntosEnemigo.cs" />
     <Compile Include="Assets\Scripts\PuntosVida.cs" />
+    <Compile Include="Assets\Scripts\RandomSpawn.cs" />
     <Compile Include="Assets\Scripts\RotacionPantalla.cs" />
     <Compile Include="Assets\Scripts\SelectorNiveles.cs" />
     <Compile Include="Assets\Scripts\SwipeManager.cs" />

@@ -36,12 +36,13 @@ public class BrayanMove : MonoBehaviour
 	public GameObject ArepaPrefab;
 
 
-    void Awake()
+    void Start()
 	{
 		RiBo2D_Brayan = Brayan.GetComponent<Rigidbody2D>();
 		animBrayan = Brayan.GetComponent<Animator>();
 
 		offset = Camara.transform.position - Brayan.transform.position;
+        BrayanPropiedades.Muerto = false;
 	}
 
    

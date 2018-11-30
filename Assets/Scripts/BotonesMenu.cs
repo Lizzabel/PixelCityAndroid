@@ -12,7 +12,9 @@ public class BotonesMenu : MonoBehaviour {
     public GameObject panelMenu;
     public GameObject panelNiveles;
     public GameObject panelOpciones;
-    AudioSource elAudio;
+
+    public GameObject Listener;
+    AudioListener elAudio;
 
     public GameObject botonVolumen;
     Image imgVolumen;
@@ -21,7 +23,7 @@ public class BotonesMenu : MonoBehaviour {
 
     private void Start()
     {
-        elAudio = gameObject.GetComponent<AudioSource>();
+        elAudio = Listener.GetComponent<AudioListener>();
         imgVolumen = botonVolumen.GetComponent<Image>();
         imgVolumen.sprite = muted[0];
 
@@ -59,7 +61,18 @@ public class BotonesMenu : MonoBehaviour {
 
     public void MutearLosAudios()
     {
-        elAudio.mute = !elAudio.mute;
+
+        if (elAudio.enabled == false)
+        {
+            elAudio.enabled = true;
+            PlayerPrefs.SetInt("MusicaOn", 1);
+        }
+        else
+        {
+            elAudio.enabled = false;
+            PlayerPrefs.SetInt("MusicaOn", 0);
+        }
+
         imgVolumen.sprite = muted[numeroMute];
         numeroMute++;
         if (numeroMute >= muted.Length)
@@ -67,14 +80,6 @@ public class BotonesMenu : MonoBehaviour {
             numeroMute = 0;
         }
 
-		if (!elAudio.mute)
-		{
-			PlayerPrefs.SetInt("MusicaOn", 1);
-		}else
-		{
-			PlayerPrefs.SetInt("MusicaOn", 0);
-		}
     }
-
 
 }
