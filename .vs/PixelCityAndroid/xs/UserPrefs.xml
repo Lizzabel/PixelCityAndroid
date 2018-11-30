@@ -1,13 +1,9 @@
 ﻿<Properties StartupConfiguration="{A2842204-FA6A-B4D9-42C4-2BCBA68C15FD}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MenuPausa.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Ganar.cs">
     <Files>
-      <File FileName="Assets/Scripts/BrayanMove.cs" Line="190" Column="3" />
-      <File FileName="Assets/Scripts/SwipeManager.cs" Line="35" Column="10" />
-      <File FileName="Assets/Scripts/ArepaDisparo.cs" Line="35" Column="46" />
-      <File FileName="Assets/Scripts/NivelManager.cs" Line="15" Column="50" />
-      <File FileName="Assets/Scripts/SelectorNiveles.cs" Line="18" Column="35" />
-      <File FileName="Assets/Scripts/MenuPausa.cs" Line="69" Column="10" />
-      <File FileName="Assets/Scripts/BotonesMenu.cs" Line="69" Column="3" />
+      <File FileName="Assets/Scripts/EnemigoBajito.cs" Line="75" Column="10" />
+      <File FileName="Assets/Scripts/ArepaDisparo.cs" Line="30" Column="29" />
+      <File FileName="Assets/Scripts/Ganar.cs" Line="7" Column="19" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.PixelCityAndroid PreferredExecutionTarget="Unity.Editor" />
