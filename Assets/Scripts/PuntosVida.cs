@@ -32,10 +32,11 @@ public class PuntosVida : MonoBehaviour {
 
 	IEnumerator Esperar()
 	{
-		if (ArepaFlotante.ContarArepa)
+		if (ArepaFlotante.ContarArepa || ArepaDisparo.ContarGolpe)
 		{
 			Puntaje();
 			ArepaFlotante.ContarArepa = false;
+			ArepaDisparo.ContarGolpe = false;
 		}
 		yield return new WaitForSecondsRealtime(0.5f);
 		StartCoroutine(Esperar());

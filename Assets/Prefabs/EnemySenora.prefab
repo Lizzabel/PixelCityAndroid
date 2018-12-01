@@ -114,7 +114,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.7398615, y: 2.2679396}
+  m_Size: {x: 5, y: 2.2679396}
   m_EdgeRadius: 0
 --- !u!68 &68342794582269884
 EdgeCollider2D:
@@ -163,7 +163,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vidaEnemigo: 100
-  dannoEnemigo: 20
+  dannoEnemigo: 40
   cerca: 0
   morir: 0
   velocidad: 3

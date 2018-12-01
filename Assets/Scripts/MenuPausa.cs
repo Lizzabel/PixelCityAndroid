@@ -25,8 +25,8 @@ public class MenuPausa : MonoBehaviour {
         imgVolumen = botonVolumen.GetComponent<Image>();
         imgVolumen.sprite = muted[0];
 		BotonPausa.SetActive(true);
-
-        /*
+		PlayerPrefs.Save();
+		/*
         audios = new AudioSource[objAudios.Length];
 
         for (int i = 0; i < objAudios.Length; i++)
@@ -34,7 +34,6 @@ public class MenuPausa : MonoBehaviour {
             audios[i] = objAudios[i].GetComponent<AudioSource>();
         }
         */
-
         if (PlayerPrefs.GetInt("MusicaOn") == 0)
 		{
 			MutearLosAudios();

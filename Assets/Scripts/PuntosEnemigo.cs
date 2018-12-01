@@ -30,7 +30,6 @@ public class PuntosEnemigo : MonoBehaviour {
     {
         if (colisionEnemigo.gameObject.tag == "Arepa")
         {
-			Debug.Log(vidaEnemigo);
 			StartCoroutine(MuerteComprobador());
         }
 

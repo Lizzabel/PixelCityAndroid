@@ -337,12 +337,15 @@
     <Compile Include="Assets\Scripts\BotonesMenu.cs" />
     <Compile Include="Assets\Scripts\BrayanMove.cs" />
     <Compile Include="Assets\Scripts\BrayanPropiedades.cs" />
+    <Compile Include="Assets\Scripts\DestruirBajito.cs" />
+    <Compile Include="Assets\Scripts\DestruirBajitoBG.cs" />
     <Compile Include="Assets\Scripts\EnemigoBajito.cs" />
     <Compile Include="Assets\Scripts\Fader\Fader.cs" />
     <Compile Include="Assets\Scripts\Fader\Initiate.cs" />
     <Compile Include="Assets\Scripts\GameOver.cs" />
     <Compile Include="Assets\Scripts\Ganar.cs" />
     <Compile Include="Assets\Scripts\MenuPausa.cs" />
+    <Compile Include="Assets\Scripts\NivelCompletado.cs" />
     <Compile Include="Assets\Scripts\PropiedadesBoton.cs" />
     <Compile Include="Assets\Scripts\PuntosEnemigo.cs" />
     <Compile Include="Assets\Scripts\PuntosVida.cs" />

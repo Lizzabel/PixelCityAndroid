@@ -12,7 +12,7 @@ public class BrayanPropiedades : MonoBehaviour {
 
 	private void OnCollisionEnter2D(Collision2D collision)
 	{
-		if (collision.gameObject.tag == "Enemigo")
+		if ((collision.gameObject.tag == "Enemigo") || (collision.gameObject.tag == "EnemigoBajito"))
 		{
 			PuntosVida.vida -= danno;
 			Atacando = true;

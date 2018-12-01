@@ -43,10 +43,11 @@ public class BrayanMove : MonoBehaviour
 
 		offset = Camara.transform.position - Brayan.transform.position;
         BrayanPropiedades.Muerto = false;
+		PlayerPrefs.Save();
 	}
 
    
-    void FixedUpdate() {
+    void Update() {
 
 		if (!BrayanPropiedades.Muerto)
 		{

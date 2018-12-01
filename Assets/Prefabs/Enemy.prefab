@@ -40,7 +40,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1694464715319338}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.31, y: -2.14, z: -0.072343886}
+  m_LocalPosition: {x: 7.66, y: 0.14373434, z: -0.072343886}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children: []
   m_Father: {fileID: 0}
@@ -114,7 +114,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.7398615, y: 2.2679396}
+  m_Size: {x: 5, y: 2.2679396}
   m_EdgeRadius: 0
 --- !u!68 &68580280938143810
 EdgeCollider2D:
@@ -163,7 +163,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vidaEnemigo: 100
-  dannoEnemigo: 20
+  dannoEnemigo: 40
   cerca: 0
   morir: 0
   velocidad: 3

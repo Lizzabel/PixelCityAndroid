@@ -27,6 +27,8 @@ public class SelectorNiveles : MonoBehaviour {
     private void Start()
     {
         LlenarLista();
+		GuardarCambios();
+		PlayerPrefs.Save();
     }
 
 

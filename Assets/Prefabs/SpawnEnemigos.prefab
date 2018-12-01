@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1055018954081612}
+  m_IsPrefabParent: 1
+--- !u!1 &1055018954081612
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4381002279372974}
+  - component: {fileID: 114009680273997588}
+  - component: {fileID: 61781544788525178}
+  m_Layer: 0
+  m_Name: SpawnEnemigos
+  m_TagString: SpawnerEnemigos
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4381002279372974
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1055018954081612}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.61, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &61781544788525178
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1055018954081612}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 3.2765632}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 6.5214396}
+  m_EdgeRadius: 0
+--- !u!114 &114009680273997588
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1055018954081612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 481f0ed17893acb43a85498514e86c30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnemigoBajito: {fileID: 1837866805024116, guid: d6dc6d91f7328449c8c86ebdc55a2ffe,
+    type: 2}
+  EsEnemigoBajito: 0
+  ActTriggerAdelante: 0
+  Enemigos:
+  - {fileID: 1694464715319338, guid: 25f2ab885a5cddb449fd3c9018b5214c, type: 2}
+  - {fileID: 1249243188605030, guid: 5c658c953791cbf48958ce0774aee778, type: 2}
+  - {fileID: 1113679559299932, guid: 86a196219c350aa4f9b8a137121d5e22, type: 2}
+  - {fileID: 1339616495766584, guid: 4887590ff0c34fd429a740b7663bef94, type: 2}
+  CantidadEnemigos: 5
+  TiempoSpawn: 1

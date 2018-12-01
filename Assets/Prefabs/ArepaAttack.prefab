@@ -109,6 +109,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidad: 800
   RB_Arepa: {fileID: 50007190034640568}
+  PuntosPorGolpe: 2
 --- !u!212 &212085515528065448
 SpriteRenderer:
   m_ObjectHideFlags: 1
