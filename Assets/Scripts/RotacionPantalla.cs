@@ -5,8 +5,7 @@ using UnityEngine;
 public class RotacionPantalla : MonoBehaviour
 {
 
-	public bool Portrait;
-	public bool LandScapeRight;
+	public int nivelToRotate;
 
 	private void Start()
 	{
@@ -14,16 +13,29 @@ public class RotacionPantalla : MonoBehaviour
 	}
 	IEnumerator Esperar()
 	{
-		yield return new WaitForSecondsRealtime(2.0f);
+		yield return new WaitForSecondsRealtime(0.5f);
 		GirarPantalla();
 		StartCoroutine(Esperar());
 	}
 	void GirarPantalla()
 	{
-		Screen.autorotateToPortrait = Portrait;
-        Screen.autorotateToPortraitUpsideDown = false;
-        Screen.autorotateToLandscapeRight = LandScapeRight;
-        Screen.autorotateToLandscapeLeft = false;
+		if (nivelToRotate == 0)
+		{
+			Screen.autorotateToPortrait = true;
+            Screen.autorotateToPortraitUpsideDown = false;
+			Screen.autorotateToLandscapeRight = false;
+            Screen.autorotateToLandscapeLeft = false;
+			Screen.orientation = ScreenOrientation.Portrait;
+		}else
+		{
+			Screen.autorotateToPortrait = false;
+            Screen.autorotateToPortraitUpsideDown = false;
+			Screen.autorotateToLandscapeRight = true;
+            Screen.autorotateToLandscapeLeft = false;
+			Screen.orientation = ScreenOrientation.LandscapeRight;
+		}
+
+        
 	}
     
 }

@@ -14,6 +14,7 @@ public class Ganar : MonoBehaviour {
         PlayerPrefs.SetInt("Nivel" + (numeroNivel + 1), 1);
         PlayerPrefs.SetInt("Nivel" + numeroNivel + "_score", PuntosVida.puntos);
 		MenuNivelCompletado.SetActive(false);
+		PlayerPrefs.Save();
     }
 
 	private void OnTriggerEnter2D(Collider2D Trigger)
@@ -29,5 +30,6 @@ public class Ganar : MonoBehaviour {
     {
 		PuntosText.text = PuntosVida.puntos.ToString();
         PlayerPrefs.SetInt("Nivel" + numeroNivel + "_score", PuntosVida.puntos);
+		PlayerPrefs.Save();
     }
 }

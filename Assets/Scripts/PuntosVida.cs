@@ -18,11 +18,13 @@ public class PuntosVida : MonoBehaviour {
 		vida = 100f;
 		puntos = 0;
 	}
-
+    
 	private void Start()
 	{
         StartCoroutine(Esperar());
 		barraVida = barVidaObject.GetComponent<Image>();
+		PlayerPrefs.SetInt("val", 1);
+		PlayerPrefs.Save();
 	}
 
 	public void Puntaje()

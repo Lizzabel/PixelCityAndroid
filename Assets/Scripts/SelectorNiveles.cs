@@ -41,6 +41,11 @@ public class SelectorNiveles : MonoBehaviour {
             nuevoBoton.GetComponent<Image>().sprite = Nivel.imagenNivel;
             boton.NumeroNivel = Nivel.NumeroNivel;
             
+
+
+            PlayerPrefs.SetInt("Nivel" + ("Nivel" + boton.NumeroNivel), 1);//
+
+
             
             if (PlayerPrefs.GetInt("Nivel"+boton.NumeroNivel) == 1) //kes zesto
             {
@@ -53,6 +58,11 @@ public class SelectorNiveles : MonoBehaviour {
             boton.Desbloqueado = Nivel.Desbloqueado;
             boton.GetComponent<Button>().interactable = Nivel.Interactuable;
             boton.GetComponent<Button>().onClick.AddListener(() => CargarNiveles("Nivel" + boton.NumeroNivel));
+
+
+			PlayerPrefs.SetInt("Nivel" + ("Nivel" + boton.NumeroNivel+ "score"), 0);//dddddddddd
+            
+
 
             if(PlayerPrefs.GetInt("Nivel"+boton.NumeroNivel+"_score")>0)
             {

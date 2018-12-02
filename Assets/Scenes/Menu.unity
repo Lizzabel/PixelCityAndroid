@@ -1001,8 +1001,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90e0031f553bd493b8e0604cba4bff53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Portrait: 1
-  LandScapeRight: 0
+  nivelToRotate: 0
 --- !u!4 &565365817
 Transform:
   m_ObjectHideFlags: 0
@@ -1033,11 +1032,18 @@ MonoBehaviour:
   panelMenu: {fileID: 1226701312}
   panelNiveles: {fileID: 916500266}
   panelOpciones: {fileID: 1122705613}
-  Listener: {fileID: 388916954}
   botonVolumen: {fileID: 1253015118}
   muted:
   - {fileID: 21300002, guid: 1185db4062b46a646bc08384fa7994a3, type: 3}
   - {fileID: 21300000, guid: 1185db4062b46a646bc08384fa7994a3, type: 3}
+  numeroNivel: 0
+  objAudios:
+  - {fileID: 565365815}
+  - {fileID: 3539989}
+  - {fileID: 1922999277}
+  - {fileID: 624502840}
+  - {fileID: 710549204}
+  - {fileID: 1848126247}
 --- !u!114 &565365819
 MonoBehaviour:
   m_ObjectHideFlags: 0
