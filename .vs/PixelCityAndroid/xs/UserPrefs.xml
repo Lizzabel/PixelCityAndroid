@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{A2842204-FA6A-B4D9-42C4-2BCBA68C15FD}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MenuPausa.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/TriggerPerro.cs">
     <Files>
       <File FileName="Assets/Scripts/ArepaFlotante.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/BotonesMenu.cs" Line="139" Column="6" />
@@ -7,7 +7,9 @@
       <File FileName="Assets/Scripts/PuntosVida.cs" Line="21" Column="5" />
       <File FileName="Assets/Scripts/SelectorNiveles.cs" Line="101" Column="14" />
       <File FileName="Assets/Scripts/SwipeManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/RotacionPantalla.cs" Line="23" Column="4" />
+      <File FileName="Assets/Scripts/RotacionPantalla.cs" Line="20" Column="22" />
+      <File FileName="Assets/Scripts/TriggerPerro.cs" Line="36" Column="40" />
+      <File FileName="Assets/Scripts/BrayanMove.cs" Line="128" Column="45" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.PixelCityAndroid PreferredExecutionTarget="Unity.Editor" />

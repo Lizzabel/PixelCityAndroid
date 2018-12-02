@@ -1,0 +1,845 @@
+fileFormatVersion: 2
+guid: 6fd1f83a1cb694f86afeea2c59097f96
+timeCreated: 1543769799
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ezgif.com-gif-maker (1)_0
+    21300002: ezgif.com-gif-maker (1)_1
+    21300004: ezgif.com-gif-maker (1)_2
+    21300006: ezgif.com-gif-maker (1)_3
+    21300008: ezgif.com-gif-maker (1)_4
+    21300010: ezgif.com-gif-maker (1)_5
+    21300012: ezgif.com-gif-maker (1)_6
+    21300014: ezgif.com-gif-maker (1)_7
+    21300016: ezgif.com-gif-maker (1)_8
+    21300018: ezgif.com-gif-maker (1)_9
+    21300020: ezgif.com-gif-maker (1)_10
+    21300022: ezgif.com-gif-maker (1)_11
+    21300024: ezgif.com-gif-maker (1)_12
+    21300026: ezgif.com-gif-maker (1)_13
+    21300028: ezgif.com-gif-maker (1)_14
+    21300030: ezgif.com-gif-maker (1)_15
+    21300032: ezgif.com-gif-maker (1)_16
+    21300034: ezgif.com-gif-maker (1)_17
+    21300036: ezgif.com-gif-maker (1)_18
+    21300038: ezgif.com-gif-maker (1)_19
+    21300040: ezgif.com-gif-maker (1)_20
+    21300042: ezgif.com-gif-maker (1)_21
+    21300044: ezgif.com-gif-maker (1)_22
+    21300046: ezgif.com-gif-maker (1)_23
+    21300048: ezgif.com-gif-maker (1)_24
+    21300050: ezgif.com-gif-maker (1)_25
+    21300052: ezgif.com-gif-maker (1)_26
+    21300054: ezgif.com-gif-maker (1)_27
+    21300056: ezgif.com-gif-maker (1)_28
+    21300058: ezgif.com-gif-maker (1)_29
+    21300060: ezgif.com-gif-maker (1)_30
+    21300062: ezgif.com-gif-maker (1)_31
+    21300064: ezgif.com-gif-maker (1)_32
+    21300066: ezgif.com-gif-maker (1)_33
+    21300068: ezgif.com-gif-maker (1)_34
+    21300070: ezgif.com-gif-maker (1)_35
+    21300072: ezgif.com-gif-maker (1)_36
+    21300074: ezgif.com-gif-maker (1)_37
+    21300076: ezgif.com-gif-maker (1)_38
+    21300078: ezgif.com-gif-maker (1)_39
+    21300080: ezgif.com-gif-maker (1)_40
+    21300082: ezgif.com-gif-maker (1)_41
+    21300084: ezgif.com-gif-maker (1)_42
+    21300086: ezgif.com-gif-maker (1)_43
+    21300088: ezgif.com-gif-maker (1)_44
+    21300090: ezgif.com-gif-maker (1)_45
+    21300092: ezgif.com-gif-maker (1)_46
+    21300094: ezgif.com-gif-maker (1)_47
+    21300096: Perro_0
+    21300098: Perro_1
+    21300100: Perro_2
+    21300102: Perro_3
+    21300104: Perro_4
+    21300106: Perro_5
+    21300108: Perro_6
+    21300110: Perro_7
+    21300112: Perro_8
+    21300114: Perro_9
+    21300116: Perro_10
+    21300118: Perro_11
+    21300120: Perro_12
+    21300122: Perro_13
+    21300124: Perro_14
+    21300126: Perro_15
+    21300128: Perro_16
+    21300130: Perro_17
+    21300132: Perro_18
+    21300134: Perro_19
+    21300136: Perro_20
+    21300138: Perro_21
+    21300140: Perro_22
+    21300142: Perro_23
+    21300144: Perro_24
+    21300146: Perro_25
+    21300148: Perro_26
+    21300150: Perro_27
+    21300152: Perro_28
+    21300154: Perro_29
+    21300156: Perro_30
+    21300158: Perro_31
+    21300160: Perro_32
+    21300162: Perro_33
+    21300164: Perro_34
+    21300166: Perro_35
+    21300168: Perro_36
+    21300170: Perro_37
+    21300172: Perro_38
+    21300174: Perro_39
+    21300176: Perro_40
+    21300178: Perro_41
+    21300180: Perro_42
+    21300182: Perro_43
+    21300184: Perro_44
+    21300186: Perro_45
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 54
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Perro_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 882
+        width: 154
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Perro_1
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 882
+        width: 154
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Perro_2
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 882
+        width: 154
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Perro_3
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 882
+        width: 154
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Perro_4
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 882
+        width: 154
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Perro_5
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 882
+        width: 154
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Perro_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 756
+        width: 154
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Perro_7
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 756
+        width: 154
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Perro_8
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 756
+        width: 154
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Perro_9
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 756
+        width: 154
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Perro_10
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 756
+        width: 154
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Perro_11
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 756
+        width: 154
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Perro_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 630
+        width: 154
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Perro_13
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 630
+        width: 154
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Perro_14
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 630
+        width: 154
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Perro_15
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 630
+        width: 154
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Perro_16
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 630
+        width: 154
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Perro_17
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 630
+        width: 154
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Perro_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 504
+        width: 154
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Perro_19
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 504
+        width: 154
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Perro_20
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 504
+        width: 154
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Perro_21
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 504
+        width: 154
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Perro_22
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 504
+        width: 154
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Perro_23
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 504
+        width: 154
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Perro_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 378
+        width: 154
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Perro_25
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 378
+        width: 154
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Perro_26
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 378
+        width: 154
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Perro_27
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 378
+        width: 154
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Perro_28
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 378
+        width: 154
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Perro_29
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 378
+        width: 154
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Perro_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 252
+        width: 154
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Perro_31
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 252
+        width: 154
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Perro_32
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 252
+        width: 154
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Perro_33
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 252
+        width: 154
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Perro_34
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 252
+        width: 154
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Perro_35
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 252
+        width: 154
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Perro_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 126
+        width: 154
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Perro_37
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 126
+        width: 154
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Perro_38
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 126
+        width: 154
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Perro_39
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 126
+        width: 154
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Perro_40
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 126
+        width: 154
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Perro_41
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 126
+        width: 154
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Perro_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 154
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Perro_43
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 0
+        width: 154
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Perro_44
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 0
+        width: 154
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Perro_45
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 0
+        width: 154
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
