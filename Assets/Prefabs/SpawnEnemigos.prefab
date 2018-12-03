@@ -77,6 +77,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481f0ed17893acb43a85498514e86c30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  perrito: {fileID: 1226826811002156, guid: 1172d1424f560604ba68a3cbb4a0f5a6, type: 2}
   EnemigoBajito: {fileID: 1837866805024116, guid: d6dc6d91f7328449c8c86ebdc55a2ffe,
     type: 2}
   EsEnemigoBajito: 0

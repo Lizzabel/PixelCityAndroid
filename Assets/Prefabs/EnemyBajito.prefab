@@ -138,6 +138,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cerca: 0
   velocidad: 5
+  danno: 5
 --- !u!212 &212267791717723654
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -5,7 +5,7 @@ using UnityEngine;
 public class BrayanPropiedades : MonoBehaviour {
 
     
-	public float danno = 10f;
+	public float danno;
 	public static bool Muerto;
 	public static bool Atacando;
     public GameObject GameOver; 

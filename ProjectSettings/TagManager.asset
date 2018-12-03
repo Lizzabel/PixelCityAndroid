@@ -12,6 +12,7 @@ TagManager:
   - SpawnerBajito
   - SpawnerEnemigos
   - EnemigoBajito
+  - Perrito
   layers:
   - Default
   - TransparentFX

@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class RandomSpawn : MonoBehaviour {
 
-	public GameObject EnemigoBajito;
+    public GameObject perrito;
+    public GameObject EnemigoBajito;
     public bool EsEnemigoBajito;
 	public bool ActTriggerAdelante;
 
@@ -24,10 +25,10 @@ public class RandomSpawn : MonoBehaviour {
 
 	private void OnTriggerEnter2D(Collider2D trigger)
 	{
-		if (trigger.gameObject.tag == "TriggerAdelante")
+        if (trigger.gameObject.tag == "TriggerAdelante")
 		{
-			StartCoroutine(EsperarSpawn());
-		}
+            StartCoroutine(EsperarSpawn());
+        }
 		if (trigger.gameObject.tag == "TriggerAtras")
         {
             StartCoroutine(EsperarSpawn2());
@@ -53,12 +54,14 @@ public class RandomSpawn : MonoBehaviour {
                         StartCoroutine(EsperarSpawn());
 					}else
 					{
-						Destroy(gameObject);
+                        Instantiate(perrito, transform.position, transform.rotation);
+                        Destroy(gameObject);
 						Adelante = 2;
 					}
                 }
                 else
                 {
+                    Instantiate(perrito, transform.position, transform.rotation);
                     Instantiate(EnemigoBajito, transform.position, transform.rotation);
 					Adelante = 2;
                 }
@@ -84,12 +87,14 @@ public class RandomSpawn : MonoBehaviour {
                         StartCoroutine(EsperarSpawn2());
 					}else
                     {
-						Destroy(gameObject);
+                        Instantiate(perrito, transform.position, transform.rotation);
+                        Destroy(gameObject);
 						Atras = 2;
                     }
                 }
                 else
                 {
+                    Instantiate(perrito, transform.position, transform.rotation);
                     Instantiate(EnemigoBajito, transform.position, transform.rotation);
 					Destroy(gameObject);
                     Atras = 2;

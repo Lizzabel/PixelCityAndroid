@@ -71,7 +71,16 @@ public class BrayanMove : MonoBehaviour
 						Girar();
 					}
 
-				}
+                    if ((Input.GetKeyDown(KeyCode.Space)) || (SwipeManager.SwipeDirection == Swipe.Up)) // saltar, cambiar por swipe up
+                    {
+                        animBrayan.SetBool("Ground", false);
+                        StartCoroutine(SaltarTime());
+                    }
+                    else
+                    {
+                        animBrayan.SetBool("Ground", true);
+                    }
+                }
 
 				if (Izq == true)
 				{
@@ -80,7 +89,18 @@ public class BrayanMove : MonoBehaviour
 					{
 						Girar();
 					}
-				}
+
+                    if ((Input.GetKeyDown(KeyCode.Space)) || (SwipeManager.SwipeDirection == Swipe.Up)) // saltar, cambiar por swipe up
+                    {
+                        animBrayan.SetBool("Ground", false);
+                        StartCoroutine(SaltarTime());
+                    }
+                    else
+                    {
+                        animBrayan.SetBool("Ground", true);
+                    }
+
+                }
 			}
 			animBrayan.SetBool("Run", Anim);
 

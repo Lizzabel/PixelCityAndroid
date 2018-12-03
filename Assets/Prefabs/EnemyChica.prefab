@@ -163,7 +163,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vidaEnemigo: 100
-  dannoEnemigo: 40
+  dannoEnemigo: 45
   cerca: 0
   morir: 0
   velocidad: 2
