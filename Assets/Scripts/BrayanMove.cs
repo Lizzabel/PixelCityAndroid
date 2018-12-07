@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BrayanMove : MonoBehaviour
 { 
@@ -37,12 +38,20 @@ public class BrayanMove : MonoBehaviour
     int indicador;
     bool AnimAttack;
 
+    //cambiar color boton
+    public GameObject botonArepa;
+    Image imagenArepa;
+    public Color arepaActivo;
+    public Color arepaInactivo;
+
     void Start()
 	{
 		RiBo2D_Brayan = Brayan.GetComponent<Rigidbody2D>();
 		animBrayan = Brayan.GetComponent<Animator>();
-
-		//offset = Camara.transform.position - Brayan.transform.position;
+        animBrayan.SetBool("Ground", true);
+        imagenArepa = botonArepa.GetComponent<Image>();
+        imagenArepa.color = arepaActivo;
+        //offset = Camara.transform.position - Brayan.transform.position;
         BrayanPropiedades.Muerto = false;
 	}
 
@@ -166,6 +175,7 @@ public class BrayanMove : MonoBehaviour
 	{
         if (indicador == 0)
         {
+            imagenArepa.color = arepaInactivo;
             AnimAttack = true;
             animBrayan.SetBool("Attack", AnimAttack);
             StartCoroutine(EsperarAtaque());
@@ -186,6 +196,7 @@ public class BrayanMove : MonoBehaviour
         animBrayan.SetBool("Attack", AnimAttack);
         yield return new WaitForSecondsRealtime(0.2f);
         indicador = 0;
+        imagenArepa.color = arepaActivo;
     }
 
 

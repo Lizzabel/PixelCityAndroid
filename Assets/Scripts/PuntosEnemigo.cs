@@ -28,9 +28,10 @@ public class PuntosEnemigo : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D colisionEnemigo)
     {
-        if (colisionEnemigo.gameObject.tag == "Arepa")
+        if (colisionEnemigo.gameObject.tag == "arepaAttack")
         {
-			StartCoroutine(MuerteComprobador());
+            cerca = true;
+            StartCoroutine(MuerteComprobador());
         }
 
 		if (colisionEnemigo.gameObject.tag == "Player")
@@ -87,6 +88,7 @@ public class PuntosEnemigo : MonoBehaviour {
 
     public void Correr()
     {
+        Debug.Log(cerca);
 		if (!BrayanPropiedades.Muerto)
 		{
             if (cerca)

@@ -27,7 +27,7 @@ public class EnemigoBajito : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D colisionEnemigo)
     {
-        if (colisionEnemigo.gameObject.tag == "Arepa")
+        if (colisionEnemigo.gameObject.tag == "arepaAttack")
         {
 			Girar();
 			StartCoroutine(EsperarCerca());
