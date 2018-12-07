@@ -331,6 +331,10 @@ Prefab:
       propertyPath: m_Name
       value: Arepa2 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 1843921504454290, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
   m_IsPrefabParent: 0
@@ -377,6 +381,10 @@ Prefab:
       propertyPath: m_Name
       value: Arepa2 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 1843921504454290, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
   m_IsPrefabParent: 0
@@ -389,7 +397,7 @@ GameObject:
   m_Component:
   - component: {fileID: 80175771}
   - component: {fileID: 80175772}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Izq
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -635,6 +643,10 @@ Prefab:
       propertyPath: m_Name
       value: Arepa2 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 1843921504454290, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
   m_IsPrefabParent: 0
@@ -721,7 +733,7 @@ GameObject:
   m_Component:
   - component: {fileID: 118283406}
   - component: {fileID: 118283407}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Der
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -827,6 +839,10 @@ Prefab:
     - target: {fileID: 1843921504454290, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
       propertyPath: m_Name
       value: Arepa2 (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1843921504454290, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
@@ -1367,7 +1383,7 @@ GameObject:
   m_Component:
   - component: {fileID: 250430226}
   - component: {fileID: 250430227}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Semaforo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1474,6 +1490,10 @@ Prefab:
       propertyPath: m_Name
       value: Arepa2 (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 1843921504454290, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
   m_IsPrefabParent: 0
@@ -1520,6 +1540,10 @@ Prefab:
       propertyPath: m_Name
       value: Arepa3
       objectReference: {fileID: 0}
+    - target: {fileID: 1843921504454290, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
   m_IsPrefabParent: 0
@@ -1531,7 +1555,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 269424285}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Poblado2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1997,7 +2021,7 @@ GameObject:
   m_Component:
   - component: {fileID: 378586023}
   - component: {fileID: 378586022}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Carro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2109,6 +2133,10 @@ Prefab:
       propertyPath: m_Name
       value: Arepa2 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1843921504454290, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
   m_IsPrefabParent: 0
@@ -2155,6 +2183,10 @@ Prefab:
       propertyPath: m_Name
       value: Arepa2 (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 1843921504454290, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
   m_IsPrefabParent: 0
@@ -2166,7 +2198,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 398536355}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Poblado3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2231,6 +2263,10 @@ Prefab:
       propertyPath: m_Name
       value: Arepa2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1843921504454290, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
   m_IsPrefabParent: 0
@@ -2276,6 +2312,10 @@ Prefab:
     - target: {fileID: 1843921504454290, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
       propertyPath: m_Name
       value: Arepa2 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1843921504454290, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
@@ -2485,6 +2525,10 @@ Prefab:
     - target: {fileID: 1843921504454290, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
       propertyPath: m_Name
       value: Arepa2 (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1843921504454290, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
@@ -2800,6 +2844,10 @@ Prefab:
       propertyPath: m_Name
       value: Arepa2 (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 1843921504454290, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
   m_IsPrefabParent: 0
@@ -3008,7 +3056,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 557800129}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Arepas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3104,6 +3152,10 @@ Prefab:
     - target: {fileID: 1843921504454290, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
       propertyPath: m_Name
       value: Arepa2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1843921504454290, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
@@ -3613,6 +3665,10 @@ Prefab:
       propertyPath: m_Name
       value: Arepa2 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 1843921504454290, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
   m_IsPrefabParent: 0
@@ -3959,7 +4015,7 @@ GameObject:
   m_Component:
   - component: {fileID: 677272674}
   - component: {fileID: 677272675}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Poblado2izq1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4328,7 +4384,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 779383574}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.245, y: 0.68, z: 0}
+  m_LocalPosition: {x: 0.3, y: 0.68, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 897637789}
@@ -4745,6 +4801,10 @@ Prefab:
       propertyPath: m_Name
       value: Arepa2 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 1843921504454290, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
   m_IsPrefabParent: 0
@@ -4937,7 +4997,7 @@ GameObject:
   - component: {fileID: 944871357}
   - component: {fileID: 944871360}
   - component: {fileID: 944871361}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Poblado4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5076,6 +5136,10 @@ Prefab:
     - target: {fileID: 1843921504454290, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
       propertyPath: m_Name
       value: Arepa2 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1843921504454290, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
@@ -5217,6 +5281,10 @@ Prefab:
       propertyPath: m_Name
       value: Arepa2 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1843921504454290, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
   m_IsPrefabParent: 0
@@ -5229,7 +5297,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1051331573}
   - component: {fileID: 1051331574}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Poblado3Der
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5600,7 +5668,7 @@ GameObject:
   - component: {fileID: 1193474895}
   - component: {fileID: 1193474894}
   - component: {fileID: 1193474893}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Ganar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5756,6 +5824,10 @@ Prefab:
       propertyPath: m_Name
       value: Arepa2 (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 1843921504454290, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
   m_IsPrefabParent: 0
@@ -5801,6 +5873,10 @@ Prefab:
     - target: {fileID: 1843921504454290, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
       propertyPath: m_Name
       value: Arepa2 (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1843921504454290, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
@@ -5939,6 +6015,10 @@ Prefab:
       propertyPath: m_Name
       value: Arepa2 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 1843921504454290, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
   m_IsPrefabParent: 0
@@ -5985,6 +6065,10 @@ Prefab:
       propertyPath: m_Name
       value: Arepa2 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 1843921504454290, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
   m_IsPrefabParent: 0
@@ -6030,6 +6114,10 @@ Prefab:
     - target: {fileID: 1843921504454290, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
       propertyPath: m_Name
       value: Arepa1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1843921504454290, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
@@ -6243,6 +6331,10 @@ Prefab:
       propertyPath: m_Name
       value: Arepa2 (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 1843921504454290, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
   m_IsPrefabParent: 0
@@ -6377,6 +6469,10 @@ Prefab:
     - target: {fileID: 1843921504454290, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
       propertyPath: m_Name
       value: Arepa2 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1843921504454290, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
@@ -6528,7 +6624,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1474349793}
   - component: {fileID: 1474349794}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Poblado2izq2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6675,7 +6771,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1515986627}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Poblado1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6709,7 +6805,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1522220666}
   - component: {fileID: 1522220667}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Poblado1Izq1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6782,7 +6878,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1547609064}
   - component: {fileID: 1547609065}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Semaforo2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6894,6 +6990,10 @@ Prefab:
       propertyPath: m_Name
       value: Arepa2 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1843921504454290, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
   m_IsPrefabParent: 0
@@ -6939,6 +7039,10 @@ Prefab:
     - target: {fileID: 1843921504454290, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
       propertyPath: m_Name
       value: Arepa2 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1843921504454290, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
@@ -6986,6 +7090,10 @@ Prefab:
       propertyPath: m_Name
       value: Arepa2 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1843921504454290, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
   m_IsPrefabParent: 0
@@ -6998,7 +7106,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1643866314}
   - component: {fileID: 1643866315}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Poblado2Der2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7323,7 +7431,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 337240941}
           m_MethodName: Ataque
-          m_Mode: 6
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -7337,18 +7445,7 @@ MonoBehaviour:
   - eventID: 3
     callback:
       m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 337240941}
-          m_MethodName: Ataque
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+        m_Calls: []
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
@@ -7522,7 +7619,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1766297094}
   - component: {fileID: 1766297095}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Poblado1Izq3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7597,7 +7694,7 @@ GameObject:
   - component: {fileID: 1775126355}
   - component: {fileID: 1775126354}
   - component: {fileID: 1775126353}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: BackGround
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7840,6 +7937,10 @@ Prefab:
       propertyPath: m_Name
       value: Arepa2 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 1843921504454290, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
   m_IsPrefabParent: 0
@@ -7985,7 +8086,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1808305539}
   - component: {fileID: 1808305540}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Poblado3izq
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8133,6 +8234,10 @@ Prefab:
       propertyPath: m_Name
       value: Arepa1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1843921504454290, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
   m_IsPrefabParent: 0
@@ -8178,6 +8283,10 @@ Prefab:
     - target: {fileID: 1843921504454290, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
       propertyPath: m_Name
       value: Arepa2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1843921504454290, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
@@ -8225,6 +8334,10 @@ Prefab:
       propertyPath: m_Name
       value: Arepa2 (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 1843921504454290, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
   m_IsPrefabParent: 0
@@ -8270,6 +8383,10 @@ Prefab:
     - target: {fileID: 1843921504454290, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
       propertyPath: m_Name
       value: Arepa2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1843921504454290, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
@@ -8350,7 +8467,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1941146228}
   - component: {fileID: 1941146229}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Poblado1Izq2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8462,6 +8579,10 @@ Prefab:
       propertyPath: m_Name
       value: Arepa1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1843921504454290, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
   m_IsPrefabParent: 0
@@ -8512,6 +8633,10 @@ Prefab:
     - target: {fileID: 1843921504454290, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
       propertyPath: m_Name
       value: Arepa2 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1843921504454290, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64c9aafa0d8864e18b6f87debbbf0483, type: 2}
@@ -8787,7 +8912,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2115983078}
   - component: {fileID: 2115983079}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Poblado2Der1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

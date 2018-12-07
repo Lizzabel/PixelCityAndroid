@@ -15,7 +15,7 @@ public class BotonesMenu : MonoBehaviour {
    
     public GameObject botonVolumen;
     Image imgVolumen;
-    int numeroMute = 1;
+    //int numeroMute = 1;
     public Sprite[] muted;
 
 	int val;

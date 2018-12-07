@@ -28,20 +28,21 @@ public class BrayanMove : MonoBehaviour
 	float fuerzaSalto = 5f;
 
 
-	private Vector3 offset;
+	//private Vector3 offset;
 	public GameObject Camara;
 
 
 	public Transform PosArepa;
 	public GameObject ArepaPrefab;
-
+    int indicador;
+    bool AnimAttack;
 
     void Start()
 	{
 		RiBo2D_Brayan = Brayan.GetComponent<Rigidbody2D>();
 		animBrayan = Brayan.GetComponent<Animator>();
 
-		offset = Camara.transform.position - Brayan.transform.position;
+		//offset = Camara.transform.position - Brayan.transform.position;
         BrayanPropiedades.Muerto = false;
 	}
 
@@ -76,10 +77,6 @@ public class BrayanMove : MonoBehaviour
                         animBrayan.SetBool("Ground", false);
                         StartCoroutine(SaltarTime());
                     }
-                    else
-                    {
-                        animBrayan.SetBool("Ground", true);
-                    }
                 }
 
 				if (Izq == true)
@@ -95,11 +92,6 @@ public class BrayanMove : MonoBehaviour
                         animBrayan.SetBool("Ground", false);
                         StartCoroutine(SaltarTime());
                     }
-                    else
-                    {
-                        animBrayan.SetBool("Ground", true);
-                    }
-
                 }
 			}
 			animBrayan.SetBool("Run", Anim);
@@ -111,15 +103,18 @@ public class BrayanMove : MonoBehaviour
 				animBrayan.SetBool("Ground", false);
 				StartCoroutine(SaltarTime());
 			}
-			else
-			{
-				animBrayan.SetBool("Ground", true);
-			}
-         
-		}
-        
+            else
+            {
+                animBrayan.SetBool("Ground", true);
+            }
+            /*
+            if (Input.GetKeyDown(KeyCode.RightArrow))
+            {
+                MovimientoDer();
+            } //para comprobar*/
+        }
 
-	}
+    }
     
 	public void MovimientoDer()
 	{
@@ -167,17 +162,15 @@ public class BrayanMove : MonoBehaviour
         }
 	}
 
-	public void Ataque(bool AnimAttack)
+	public void Ataque()
 	{
-        animBrayan.SetBool("Attack", AnimAttack);
-        if (!animBrayan.GetCurrentAnimatorStateInfo(0).IsName("Brayan_Attack"))
+        if (indicador == 0)
         {
-            if (!AnimAttack)
-            {
-                StartCoroutine(EsperarAtaque());
-            }
+            AnimAttack = true;
+            animBrayan.SetBool("Attack", AnimAttack);
+            StartCoroutine(EsperarAtaque());
         }
-	}
+    }
        
 	void Disparo()
 	{
@@ -186,9 +179,14 @@ public class BrayanMove : MonoBehaviour
 
 	IEnumerator EsperarAtaque()
 	{
-		yield return new WaitForSecondsRealtime(0.25f);
-		Disparo();
-	}
+        indicador = 1;
+        yield return new WaitForSecondsRealtime(0.33f);
+        AnimAttack = false;
+        Disparo();
+        animBrayan.SetBool("Attack", AnimAttack);
+        yield return new WaitForSecondsRealtime(0.2f);
+        indicador = 0;
+    }
 
 
 	private bool TocandoPiso()

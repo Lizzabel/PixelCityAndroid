@@ -21,11 +21,11 @@ GameObject:
   - component: {fileID: 4879344657118338}
   - component: {fileID: 212466846437564668}
   - component: {fileID: 95018105424658232}
-  - component: {fileID: 61767777645378232}
   - component: {fileID: 50055681088507848}
   - component: {fileID: 61988888678325966}
   - component: {fileID: 114864413603893652}
-  m_Layer: 0
+  - component: {fileID: 68259682231956178}
+  m_Layer: 14
   m_Name: Perro
   m_TagString: Perrito
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 95698116988168044}
   - component: {fileID: 61182314030693560}
   - component: {fileID: 114079332371692562}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: corazon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,7 +58,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1226826811002156}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.51, y: -3.72, z: 0}
+  m_LocalPosition: {x: 7.047451, y: -3.1277537, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 4983980676401836}
@@ -123,31 +123,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.45, y: 0.39}
   m_EdgeRadius: 0
---- !u!61 &61767777645378232
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1226826811002156}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.11297375, y: 0.09977567}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 1.54, y: 1.26}
-    newSize: {x: 1.54, y: 1.26}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.31990874, y: 0.008365005}
-  m_EdgeRadius: 0
 --- !u!61 &61988888678325966
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -173,6 +148,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.3428655, y: 1.1725874}
   m_EdgeRadius: 0
+--- !u!68 &68259682231956178
+EdgeCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1226826811002156}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.25165495, y: 0.109653875}
+  - {x: -0.030045828, y: 0.10959761}
 --- !u!95 &95018105424658232
 Animator:
   serializedVersion: 3

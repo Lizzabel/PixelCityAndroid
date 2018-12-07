@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 61174680446137826}
   - component: {fileID: 114014243596185842}
   - component: {fileID: 68847728535395474}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: EnemyGorrita
   m_TagString: Enemigo
   m_Icon: {fileID: 0}

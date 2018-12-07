@@ -10,6 +10,10 @@ public class DestruirBajitoBG : MonoBehaviour {
         {
             Destroy(collision.gameObject);
         }
+        if (collision.gameObject.tag == "Perro")
+        {
+            Destroy(collision.gameObject);
+        }
 	}
 
 }

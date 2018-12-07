@@ -13,6 +13,7 @@ TagManager:
   - SpawnerEnemigos
   - EnemigoBajito
   - Perrito
+  - arepaAttack
   layers:
   - Default
   - TransparentFX
@@ -23,12 +24,12 @@ TagManager:
   - 
   - 
   - Player
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Enemigo
+  - Props
+  - BackGround
+  - ArepaAttack
+  - Arepa
+  - Perro
   - 
   - 
   - 

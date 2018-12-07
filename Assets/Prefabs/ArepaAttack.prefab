@@ -24,9 +24,9 @@ GameObject:
   - component: {fileID: 58915598702404308}
   - component: {fileID: 50007190034640568}
   - component: {fileID: 114878470279042486}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: ArepaAttack
-  m_TagString: Arepa
+  m_TagString: arepaAttack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

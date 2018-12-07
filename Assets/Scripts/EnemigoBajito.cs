@@ -10,7 +10,7 @@ public class EnemigoBajito : MonoBehaviour
 	Animator animEnemigo;
 
     public bool cerca;
-    Rigidbody2D rbenemigo;
+    //Rigidbody2D rbenemigo;
     public float velocidad;
 
     float pos;
@@ -20,7 +20,7 @@ public class EnemigoBajito : MonoBehaviour
     {
         Transplayer = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
 		animEnemigo = gameObject.GetComponent<Animator>();
-        rbenemigo = gameObject.GetComponent<Rigidbody2D>();
+        //rbenemigo = gameObject.GetComponent<Rigidbody2D>();
 		cerca = true;
         Girar();
     }
