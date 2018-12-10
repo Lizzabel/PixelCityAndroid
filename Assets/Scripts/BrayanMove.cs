@@ -44,6 +44,8 @@ public class BrayanMove : MonoBehaviour
     public Color arepaActivo;
     public Color arepaInactivo;
 
+    int comprobarSalto;
+
     void Start()
 	{
 		RiBo2D_Brayan = Brayan.GetComponent<Rigidbody2D>();
@@ -75,17 +77,12 @@ public class BrayanMove : MonoBehaviour
 			{
 				if (Der == true)
 				{
-					RiBo2D_Brayan.velocity = new Vector2(Velocidad, RiBo2D_Brayan.velocity.y);
-					if (LadoDerecho)
+                    RiBo2D_Brayan.velocity = new Vector2(Velocidad, RiBo2D_Brayan.velocity.y);
+                    if (LadoDerecho)
 					{
 						Girar();
 					}
 
-                    if ((Input.GetKeyDown(KeyCode.Space)) || (SwipeManager.SwipeDirection == Swipe.Up)) // saltar, cambiar por swipe up
-                    {
-                        animBrayan.SetBool("Ground", false);
-                        StartCoroutine(SaltarTime());
-                    }
                 }
 
 				if (Izq == true)
@@ -95,26 +92,28 @@ public class BrayanMove : MonoBehaviour
 					{
 						Girar();
 					}
-
-                    if ((Input.GetKeyDown(KeyCode.Space)) || (SwipeManager.SwipeDirection == Swipe.Up)) // saltar, cambiar por swipe up
-                    {
-                        animBrayan.SetBool("Ground", false);
-                        StartCoroutine(SaltarTime());
-                    }
                 }
 			}
 			animBrayan.SetBool("Run", Anim);
 
 			tocandoPiso = TocandoPiso();
 
-			if ((Input.GetKeyDown(KeyCode.Space)) || (SwipeManager.SwipeDirection == Swipe.Up)) // saltar, cambiar por swipe up
-			{
-				animBrayan.SetBool("Ground", false);
-				StartCoroutine(SaltarTime());
-			}
+            if (animBrayan.GetCurrentAnimatorStateInfo(0).IsName("BrayanRunJump") || animBrayan.GetCurrentAnimatorStateInfo(0).IsName("Brayan_Jump"))
+            {
+                comprobarSalto = 1;
+            }
             else
             {
-                animBrayan.SetBool("Ground", true);
+                comprobarSalto = 0;
+            }
+
+            if (comprobarSalto == 0)
+            {
+                if ((Input.GetKeyDown(KeyCode.Space)) || (SwipeManager.SwipeDirection == Swipe.Up)) // saltar, cambiar por swipe up
+                {
+                    animBrayan.SetBool("Ground", false);
+                    StartCoroutine(SaltarTime());
+                }
             }
             /*
             if (Input.GetKeyDown(KeyCode.RightArrow))
@@ -155,7 +154,7 @@ public class BrayanMove : MonoBehaviour
 
 	IEnumerator SaltarTime()
 	{
-		yield return new WaitForSecondsRealtime(0.45f);
+        yield return new WaitForSecondsRealtime(0.45f);
 		Saltar();
 	}
 
@@ -163,11 +162,12 @@ public class BrayanMove : MonoBehaviour
 	{
         saltando = true;
 
-		if (tocandoPiso && saltando)
+		if (saltando)
         {
             tocandoPiso = false;
             saltando = false;
             RiBo2D_Brayan.AddForce(new Vector2(0, fuerzaSalto));
+            animBrayan.SetBool("Ground", true);
         }
 	}
 
@@ -204,7 +204,6 @@ public class BrayanMove : MonoBehaviour
 	{
 		if (RiBo2D_Brayan.velocity.y <= 0)
 		{
-
 			foreach (Transform pos in GrupoDePos)
 			{
 				Collider2D[] Colliders = Physics2D.OverlapCircleAll(pos.position, SueloRadios, QueEsSuelo);
@@ -213,7 +212,7 @@ public class BrayanMove : MonoBehaviour
 				{
 					if (Colliders[i].gameObject != Brayan)
 					{
-						return true;
+                        return true;
 					}
 				}
 			}
