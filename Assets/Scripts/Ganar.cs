@@ -22,8 +22,9 @@ public class Ganar : MonoBehaviour {
 		if (Trigger.gameObject.tag == "Player")
 		{
 			MenuNivelCompletado.SetActive(true);
-			GanarPuntos();
-		}
+            GanarPuntos();
+            Time.timeScale = 0f;
+        }
 	}
        
     public void GanarPuntos()
