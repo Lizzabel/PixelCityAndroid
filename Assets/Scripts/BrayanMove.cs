@@ -45,6 +45,8 @@ public class BrayanMove : MonoBehaviour
     public Color arepaInactivo;
 
     int comprobarSalto;
+    private Vector2 touchOrigin = -Vector2.one; //ni idea que es esto
+
 
     void Start()
 	{
@@ -55,24 +57,14 @@ public class BrayanMove : MonoBehaviour
         imagenArepa.color = arepaActivo;
         //offset = Camara.transform.position - Brayan.transform.position;
         BrayanPropiedades.Muerto = false;
-	}
+        atacando = false;
+    }
 
    
     void Update() {
 
 		if (!BrayanPropiedades.Muerto)
 		{
-			if (animBrayan.GetCurrentAnimatorStateInfo(0).IsName("Brayan_Attack"))
-			{
-				atacando = true;
-
-			}
-			else
-			{
-				atacando = false;
-			}
-
-
 			if (!atacando)
 			{
 				if (Der == true)
@@ -82,7 +74,6 @@ public class BrayanMove : MonoBehaviour
 					{
 						Girar();
 					}
-
                 }
 
 				if (Izq == true)
@@ -107,39 +98,85 @@ public class BrayanMove : MonoBehaviour
                 comprobarSalto = 0;
             }
 
+            ////////////////////////////////////////// TOUCH
+
+
+            int horizontal = 0;
+            int vertical = 0;
+            //Get input from the input manager, round it to an integer and store in horizontal to set x axis move direction
+            horizontal = (int)(Input.GetAxisRaw("Horizontal"));
+
+            //Get input from the input manager, round it to an integer and store in vertical to set y axis move direction
+            vertical = (int)(Input.GetAxisRaw("Vertical"));
+
+            if (horizontal != 0)
+            {
+                vertical = 0;
+            }
+
+            if (Input.touchCount > 0)
+            {
+                for (int i = 0; i < Input.touchCount; i++)
+                {
+                    //Store the first touch detected.
+                    Touch myTouch = Input.touches[i];
+
+                    //Check if the phase of that touch equals Began
+                    if (myTouch.phase == TouchPhase.Began)
+                    {
+                        //If so, set touchOrigin to the position of that touch
+                        touchOrigin = myTouch.position;
+                    }
+
+                    //If the touch phase is not Began, and instead is equal to Ended and the x of touchOrigin is greater or equal to zero:
+                    else if (myTouch.phase == TouchPhase.Ended && touchOrigin.x >= 0)
+                    {
+                        //Set touchEnd to equal the position of this touch
+                        Vector2 touchEnd = myTouch.position;
+
+                        //Calculate the difference between the beginning and end of the touch on the x axis.
+                        float x = touchEnd.x - touchOrigin.x;
+
+                        //Calculate the difference between the beginning and end of the touch on the y axis.
+                        float y = touchEnd.y - touchOrigin.y;
+
+                        //Set touchOrigin.x to -1 so that our else if statement will evaluate false and not repeat immediately.
+                        touchOrigin.x = -1;
+                        touchOrigin.y = -1; //yop
+
+                        //Check if the difference along the x axis is greater than the difference along the y axis.
+                        if (Mathf.Abs(x) > Mathf.Abs(y))
+                            //If x is greater than zero, set horizontal to 1, otherwise set it to -1
+                            horizontal = x > 0 ? 1 : -1;
+                        else
+                            //If y is greater than zero, set horizontal to 1, otherwise set it to -1
+                            vertical = y > 0 ? 1 : -1;
+                    }
+                }
+            }
+
             if (comprobarSalto == 0)
             {
-                if ((Input.GetKeyDown(KeyCode.Space)) || (SwipeManager.SwipeDirection == Swipe.Up)) // saltar, cambiar por swipe up
+                if (vertical > 0)
                 {
                     animBrayan.SetBool("Ground", false);
                     StartCoroutine(SaltarTime());
                 }
             }
-            /*
-            if (Input.GetKeyDown(KeyCode.RightArrow))
-            {
-                MovimientoDer();
-            } //para comprobar*/
         }
 
     }
     
 	public void MovimientoDer()
 	{
-		if (!atacando)
-		{
-			Der = !Der;
-			Anim = !Anim;
-		}
+        Der = !Der;
+        Anim = !Anim;
 	}
 
 	public void MovimientoIzq()
     {
-		if (!atacando)
-		{
-			Izq = !Izq;
-			Anim = !Anim;
-		}
+		Izq = !Izq;
+		Anim = !Anim;
     }
 
     public void Girar()
@@ -175,6 +212,7 @@ public class BrayanMove : MonoBehaviour
 	{
         if (indicador == 0)
         {
+            atacando = true;
             imagenArepa.color = arepaInactivo;
             AnimAttack = true;
             animBrayan.SetBool("Attack", AnimAttack);
@@ -197,6 +235,7 @@ public class BrayanMove : MonoBehaviour
         yield return new WaitForSecondsRealtime(0.2f);
         indicador = 0;
         imagenArepa.color = arepaActivo;
+        atacando = false;
     }
 
 
