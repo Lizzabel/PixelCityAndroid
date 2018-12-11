@@ -14,7 +14,7 @@ public class ArepaFlotante : MonoBehaviour {
 		if (collision.gameObject.tag == "Player")
         {
 			ContarArepa = true;
-            PowerUp();
+            Power();
             Destroy(gameObject);
         }
 	}
