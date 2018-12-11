@@ -63,6 +63,9 @@ public class BrayanMove : MonoBehaviour
    
     void Update() {
 
+		int horizontal = 0;
+        int vertical = 0;
+
 		if (!BrayanPropiedades.Muerto)
 		{
 			if (!atacando)
@@ -88,21 +91,19 @@ public class BrayanMove : MonoBehaviour
 			animBrayan.SetBool("Run", Anim);
 
 			tocandoPiso = TocandoPiso();
+            
 
             if (animBrayan.GetCurrentAnimatorStateInfo(0).IsName("BrayanRunJump") || animBrayan.GetCurrentAnimatorStateInfo(0).IsName("Brayan_Jump"))
             {
                 comprobarSalto = 1;
-            }
-            else
-            {
-                comprobarSalto = 0;
-            }
+			}else
+			{
+				comprobarSalto = 0;
+			}
+
 
             ////////////////////////////////////////// TOUCH
-
-
-            int horizontal = 0;
-            int vertical = 0;
+            
             //Get input from the input manager, round it to an integer and store in horizontal to set x axis move direction
             horizontal = (int)(Input.GetAxisRaw("Horizontal"));
 
@@ -155,13 +156,13 @@ public class BrayanMove : MonoBehaviour
                 }
             }
 
-            if (comprobarSalto == 0)
+			if (comprobarSalto == 0)
             {
                 if (vertical > 0)
                 {
                     animBrayan.SetBool("Ground", false);
                     StartCoroutine(SaltarTime());
-                }
+				}
             }
         }
 
