@@ -189,21 +189,25 @@ public class BrayanMove : MonoBehaviour
 
 	IEnumerator SaltarTime()
 	{
-        yield return new WaitForSecondsRealtime(0.45f);
+		StartCoroutine(ComprobadorTime());
+        yield return new WaitForSecondsRealtime(0.35f);
 		Saltar();
-
-		if (animBrayan.GetCurrentAnimatorStateInfo(0).IsName("BrayanRunJump"))
+	}
+	IEnumerator ComprobadorTime()
+	{
+		yield return new WaitForSecondsRealtime(0.9f);
+        if (animBrayan.GetCurrentAnimatorStateInfo(0).IsName("BrayanRunJump"))
         {
-            yield return new WaitForSecondsRealtime(1.3f);
+            yield return new WaitForSecondsRealtime(0.2f);
             comprobarSalto = 0;
         }
         if (animBrayan.GetCurrentAnimatorStateInfo(0).IsName("Brayan_Jump"))
         {
-            yield return new WaitForSecondsRealtime(1.45f);
+            yield return new WaitForSecondsRealtime(0.5f);
             comprobarSalto = 0;
         }
 	}
-
+    
 	public void Saltar()
 	{
         saltando = true;
@@ -247,6 +251,10 @@ public class BrayanMove : MonoBehaviour
         atacando = false;
     }
 
+	void AtacarPowerUp()
+	{
+		//COLOCAR ACA EL INT MANDADO POR ISA
+	}
 
 	private bool TocandoPiso()
 	{

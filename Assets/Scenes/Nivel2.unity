@@ -1726,7 +1726,7 @@ MonoBehaviour:
   QueEsSuelo:
     serializedVersion: 2
     m_Bits: 4294967295
-  fuerzaSalto: 750
+  fuerzaSalto: 960
   Camara: {fileID: 189803824}
   PosArepa: {fileID: 779383575}
   ArepaPrefab: {fileID: 1700999203173262, guid: 4ab2ca4da62474a268dc184975c95df9,
@@ -4802,7 +4802,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 3
+  m_GravityScale: 5
   m_Material: {fileID: 0}
   m_Interpolate: 1
   m_SleepingMode: 1
