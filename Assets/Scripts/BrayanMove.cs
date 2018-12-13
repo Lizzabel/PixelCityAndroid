@@ -44,11 +44,14 @@ public class BrayanMove : MonoBehaviour
     Image imagenArepa;
     public Color arepaActivo;
     public Color arepaInactivo;
+    public AudioSource AudGolpe;
 
     int comprobarSalto;
     private Vector2 touchOrigin = -Vector2.one; //ni idea que es esto
 	int CantidadDisparo;
 	public int VariableIsa;
+
+
 
 
     void Start()
@@ -229,6 +232,7 @@ public class BrayanMove : MonoBehaviour
         if (indicador == 0)
         {
             atacando = true;
+            AudGolpe.Play();
             imagenArepa.color = arepaInactivo;
             AnimAttack = true;
             animBrayan.SetBool("Attack", AnimAttack);
