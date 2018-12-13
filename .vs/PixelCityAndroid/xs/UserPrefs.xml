@@ -1,12 +1,12 @@
-﻿<Properties StartupConfiguration="{BFD6FB34-A383-79FD-629D-F8DBF74D7ED0}|">
+﻿<Properties StartupConfiguration="{A2842204-FA6A-B4D9-42C4-2BCBA68C15FD}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BrayanMove.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PowerUp.cs">
     <Files>
       <File FileName="Assets/Scripts/BrayanMove.cs" Line="188" Column="3" />
       <File FileName="Assets/Scripts/PuntosEnemigo.cs" Line="91" Column="23" />
       <File FileName="Assets/Scripts/ArepaFlotante.cs" Line="19" Column="10" />
       <File FileName="Assets/Scripts/ArepaDisparo.cs" Line="51" Column="14" />
-      <File FileName="Assets/Scripts/PowerUp.cs" Line="6" Column="2" />
+      <File FileName="Assets/Scripts/PowerUp.cs" Line="5" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.PixelCityAndroid PreferredExecutionTarget="Unity.Editor" />

@@ -1888,6 +1888,11 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!4 &341940087 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4381002279372974, guid: 16045bacdf30046ddb4ca049ec2a7cc8,
+    type: 2}
+  m_PrefabInternal: {fileID: 2075519075}
 --- !u!4 &349932216 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4469387355461022, guid: 64c9aafa0d8864e18b6f87debbbf0483,
@@ -2682,12 +2687,8 @@ Prefab:
       value: SpawnEnemigos (5)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 0}
+  m_ParentPrefab: {fileID: 100100000, guid: 16045bacdf30046ddb4ca049ec2a7cc8, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &505491107 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 505491106}
 --- !u!4 &505577483 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4469387355461022, guid: 64c9aafa0d8864e18b6f87debbbf0483,
@@ -3042,12 +3043,8 @@ Prefab:
       value: SpawnEnemigos (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 0}
+  m_ParentPrefab: {fileID: 100100000, guid: 16045bacdf30046ddb4ca049ec2a7cc8, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &545561552 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 545561551}
 --- !u!4 &549355149 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4469387355461022, guid: 64c9aafa0d8864e18b6f87debbbf0483,
@@ -3543,6 +3540,11 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 619952040}
+--- !u!4 &622020434 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4381002279372974, guid: 16045bacdf30046ddb4ca049ec2a7cc8,
+    type: 2}
+  m_PrefabInternal: {fileID: 835030715}
 --- !u!1 &635266148
 GameObject:
   m_ObjectHideFlags: 0
@@ -3617,6 +3619,11 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 635266148}
+--- !u!4 &642546815 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4381002279372974, guid: 16045bacdf30046ddb4ca049ec2a7cc8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1309045887}
 --- !u!1001 &652501599
 Prefab:
   m_ObjectHideFlags: 0
@@ -4284,7 +4291,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 755215564}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7eb723374902d4639b5aa7aeeaab4568, type: 3}
+  m_Script: {fileID: 11500000, guid: c57570c8f3e1e485ca897718073caa9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!61 &755215566
@@ -4564,12 +4571,8 @@ Prefab:
       value: SpawnEnemigos (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 0}
+  m_ParentPrefab: {fileID: 100100000, guid: 16045bacdf30046ddb4ca049ec2a7cc8, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &817430836 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 817430835}
 --- !u!1001 &835030715
 Prefab:
   m_ObjectHideFlags: 0
@@ -4638,12 +4641,8 @@ Prefab:
       value: SpawnEnemigos (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 0}
+  m_ParentPrefab: {fileID: 100100000, guid: 16045bacdf30046ddb4ca049ec2a7cc8, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &835030716 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 835030715}
 --- !u!4 &844214050 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4469387355461022, guid: 64c9aafa0d8864e18b6f87debbbf0483,
@@ -5274,6 +5273,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4469387355461022, guid: 64c9aafa0d8864e18b6f87debbbf0483,
     type: 2}
   m_PrefabInternal: {fileID: 1793380992}
+--- !u!4 &971596270 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4381002279372974, guid: 16045bacdf30046ddb4ca049ec2a7cc8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1503424006}
 --- !u!1001 &974782661
 Prefab:
   m_ObjectHideFlags: 0
@@ -5832,6 +5836,11 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1131132564}
+--- !u!4 &1138438224 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4381002279372974, guid: 16045bacdf30046ddb4ca049ec2a7cc8,
+    type: 2}
+  m_PrefabInternal: {fileID: 545561551}
 --- !u!1 &1193474891
 GameObject:
   m_ObjectHideFlags: 0
@@ -5951,6 +5960,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4469387355461022, guid: 64c9aafa0d8864e18b6f87debbbf0483,
     type: 2}
   m_PrefabInternal: {fileID: 428707547}
+--- !u!4 &1208341858 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4381002279372974, guid: 16045bacdf30046ddb4ca049ec2a7cc8,
+    type: 2}
+  m_PrefabInternal: {fileID: 505491106}
 --- !u!1001 &1260572233
 Prefab:
   m_ObjectHideFlags: 0
@@ -6130,17 +6144,18 @@ Prefab:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 0}
+  m_ParentPrefab: {fileID: 100100000, guid: 16045bacdf30046ddb4ca049ec2a7cc8, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &1309045888 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 1309045887}
 --- !u!4 &1329384301 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4469387355461022, guid: 64c9aafa0d8864e18b6f87debbbf0483,
     type: 2}
   m_PrefabInternal: {fileID: 1872969591}
+--- !u!4 &1329944317 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4381002279372974, guid: 16045bacdf30046ddb4ca049ec2a7cc8,
+    type: 2}
+  m_PrefabInternal: {fileID: 817430835}
 --- !u!1001 &1336160139
 Prefab:
   m_ObjectHideFlags: 0
@@ -6780,6 +6795,11 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1457866129}
+--- !u!4 &1468506694 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4381002279372974, guid: 16045bacdf30046ddb4ca049ec2a7cc8,
+    type: 2}
+  m_PrefabInternal: {fileID: 2107030765}
 --- !u!1 &1474349792
 GameObject:
   m_ObjectHideFlags: 0
@@ -6921,12 +6941,8 @@ Prefab:
       value: SpawnEnemigos (6)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 0}
+  m_ParentPrefab: {fileID: 100100000, guid: 16045bacdf30046ddb4ca049ec2a7cc8, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &1503424007 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 1503424006}
 --- !u!4 &1508766087 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4469387355461022, guid: 64c9aafa0d8864e18b6f87debbbf0483,
@@ -8393,7 +8409,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1817864795}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7eb723374902d4639b5aa7aeeaab4568, type: 3}
+  m_Script: {fileID: 11500000, guid: c57570c8f3e1e485ca897718073caa9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &1817864797
@@ -8503,14 +8519,14 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1309045888}
-  - {fileID: 545561552}
-  - {fileID: 835030716}
-  - {fileID: 2107030766}
-  - {fileID: 817430836}
-  - {fileID: 505491107}
-  - {fileID: 1503424007}
-  - {fileID: 2075519076}
+  - {fileID: 642546815}
+  - {fileID: 1138438224}
+  - {fileID: 622020434}
+  - {fileID: 1468506694}
+  - {fileID: 1329944317}
+  - {fileID: 1208341858}
+  - {fileID: 971596270}
+  - {fileID: 341940087}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9159,12 +9175,8 @@ Prefab:
       value: SpawnEnemigos (7)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 0}
+  m_ParentPrefab: {fileID: 100100000, guid: 16045bacdf30046ddb4ca049ec2a7cc8, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &2075519076 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 2075519075}
 --- !u!1001 &2107030765
 Prefab:
   m_ObjectHideFlags: 0
@@ -9233,12 +9245,8 @@ Prefab:
       value: SpawnEnemigos (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 0}
+  m_ParentPrefab: {fileID: 100100000, guid: 16045bacdf30046ddb4ca049ec2a7cc8, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &2107030766 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 2107030765}
 --- !u!1 &2115983077
 GameObject:
   m_ObjectHideFlags: 0

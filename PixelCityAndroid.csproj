@@ -345,6 +345,7 @@
     <Compile Include="Assets\Scripts\GameOver.cs" />
     <Compile Include="Assets\Scripts\Ganar.cs" />
     <Compile Include="Assets\Scripts\MenuPausa.cs" />
+    <Compile Include="Assets\Scripts\PowerUp.cs" />
     <Compile Include="Assets\Scripts\PropiedadesBoton.cs" />
     <Compile Include="Assets\Scripts\PuntosEnemigo.cs" />
     <Compile Include="Assets\Scripts\PuntosVida.cs" />
