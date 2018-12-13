@@ -92,15 +92,11 @@ public class BrayanMove : MonoBehaviour
 
 			tocandoPiso = TocandoPiso();
             
-
+            /*
             if (animBrayan.GetCurrentAnimatorStateInfo(0).IsName("BrayanRunJump") || animBrayan.GetCurrentAnimatorStateInfo(0).IsName("Brayan_Jump"))
             {
                 comprobarSalto = 1;
-			}else
-			{
-				comprobarSalto = 0;
-			}
-
+			}*/
 
             ////////////////////////////////////////// TOUCH
             
@@ -160,6 +156,7 @@ public class BrayanMove : MonoBehaviour
             {
                 if (vertical > 0)
                 {
+					comprobarSalto = 1;
                     animBrayan.SetBool("Ground", false);
                     StartCoroutine(SaltarTime());
 				}
@@ -194,6 +191,17 @@ public class BrayanMove : MonoBehaviour
 	{
         yield return new WaitForSecondsRealtime(0.45f);
 		Saltar();
+
+		if (animBrayan.GetCurrentAnimatorStateInfo(0).IsName("BrayanRunJump"))
+        {
+            yield return new WaitForSecondsRealtime(1.3f);
+            comprobarSalto = 0;
+        }
+        if (animBrayan.GetCurrentAnimatorStateInfo(0).IsName("Brayan_Jump"))
+        {
+            yield return new WaitForSecondsRealtime(1.45f);
+            comprobarSalto = 0;
+        }
 	}
 
 	public void Saltar()
@@ -264,12 +272,7 @@ public class BrayanMove : MonoBehaviour
    
 	void LateUpdate()
     {
-		Camara.transform.position = new Vector3(Brayan.transform.position.x, Camara.transform.position.y, Camara.transform.position.z);
-
-
+		Camara.transform.position = new Vector3(Brayan.transform.position.x, Camara.transform.position.y, Camara.transform.position.z);      
     }
-
-    
-
-
+   
 }
