@@ -37,6 +37,7 @@ public class BrayanMove : MonoBehaviour
 	public GameObject ArepaPrefab;
     int indicador;
     bool AnimAttack;
+    
 
     //cambiar color boton
     public GameObject botonArepa;
@@ -46,6 +47,8 @@ public class BrayanMove : MonoBehaviour
 
     int comprobarSalto;
     private Vector2 touchOrigin = -Vector2.one; //ni idea que es esto
+	int CantidadDisparo;
+	public int VariableIsa;
 
 
     void Start()
@@ -235,7 +238,23 @@ public class BrayanMove : MonoBehaviour
        
 	void Disparo()
 	{
-		Instantiate(ArepaPrefab, PosArepa.position, PosArepa.rotation);
+		if (VariableIsa == 0)
+		{
+			Instantiate(ArepaPrefab, PosArepa.position, PosArepa.rotation);
+		}else
+		{
+			StartCoroutine(DisparoPower());
+		}
+	}
+	IEnumerator DisparoPower()
+	{
+		yield return new WaitForSecondsRealtime(0.0f);
+		if (CantidadDisparo < 5)
+		{
+			CantidadDisparo++;
+			Instantiate(ArepaPrefab, PosArepa.position, PosArepa.rotation);
+			StartCoroutine(DisparoPower());
+		}
 	}
 
 	IEnumerator EsperarAtaque()
@@ -248,13 +267,11 @@ public class BrayanMove : MonoBehaviour
         yield return new WaitForSecondsRealtime(0.2f);
         indicador = 0;
         imagenArepa.color = arepaActivo;
-        atacando = false;
-    }
+		atacando = false;
+		yield return new WaitForSecondsRealtime(0.2f);
+		CantidadDisparo = 0;
 
-	void AtacarPowerUp()
-	{
-		//COLOCAR ACA EL INT MANDADO POR ISA
-	}
+    }
 
 	private bool TocandoPiso()
 	{

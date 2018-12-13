@@ -1699,7 +1699,6 @@ GameObject:
   - component: {fileID: 337240944}
   - component: {fileID: 337240946}
   - component: {fileID: 337240948}
-  - component: {fileID: 337240945}
   m_Layer: 0
   m_Name: MasterScript
   m_TagString: Untagged
@@ -1774,17 +1773,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   barVidaObject: {fileID: 619952040}
   PuntosText: {fileID: 503258759}
---- !u!114 &337240945
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 337240940}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7eb723374902d4639b5aa7aeeaab4568, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &337240946
 MonoBehaviour:
   m_ObjectHideFlags: 0
