@@ -61,7 +61,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\PowerUp.cs" />
     <Compile Include="Assets\Scripts\ArepaDisparo.cs" />
     <Compile Include="Assets\Scripts\ArepaFlotante.cs" />
     <Compile Include="Assets\Scripts\BotonesMenu.cs" />
@@ -76,6 +75,7 @@
     <Compile Include="Assets\Scripts\GameOver.cs" />
     <Compile Include="Assets\Scripts\Ganar.cs" />
     <Compile Include="Assets\Scripts\MenuPausa.cs" />
+    <Compile Include="Assets\Scripts\PowerUp.cs" />
     <Compile Include="Assets\Scripts\PropiedadesBoton.cs" />
     <Compile Include="Assets\Scripts\PuntosEnemigo.cs" />
     <Compile Include="Assets\Scripts\PuntosVida.cs" />
@@ -92,6 +92,9 @@
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>/Users/admin/Documents/GitHub/PixelCityAndroid/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.StandardEvents">
+      <HintPath>/Users/admin/Documents/GitHub/PixelCityAndroid/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
