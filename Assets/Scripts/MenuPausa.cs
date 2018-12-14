@@ -43,7 +43,8 @@ public class MenuPausa : MonoBehaviour {
         {
             for (int i = 0; i < objAudios.Length; i++)
             {
-                audios[i].volume = 1f;
+                audios[i].volume = 0.5f;
+				audios[0].volume = 1f;
 				imgVolumen.sprite = muted[0];
             }
         }

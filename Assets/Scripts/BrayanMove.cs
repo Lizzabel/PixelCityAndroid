@@ -166,7 +166,7 @@ public class BrayanMove : MonoBehaviour
                     animBrayan.SetBool("Ground", false);
                     StartCoroutine(SaltarTime());
 				}
-            }
+			}
         }
 
     }
@@ -198,6 +198,8 @@ public class BrayanMove : MonoBehaviour
 		StartCoroutine(ComprobadorTime());
         yield return new WaitForSecondsRealtime(0.35f);
 		Saltar();
+		yield return new WaitForSecondsRealtime(1.5f);
+
 	}
 	IEnumerator ComprobadorTime()
 	{
@@ -212,6 +214,7 @@ public class BrayanMove : MonoBehaviour
             yield return new WaitForSecondsRealtime(0.5f);
             comprobarSalto = 0;
         }
+
 	}
     
 	public void Saltar()
