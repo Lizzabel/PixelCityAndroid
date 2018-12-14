@@ -5701,7 +5701,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80ea02550a9ed43829f1a80c460183ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numeroNivel: 1
+  numeroNivel: 2
   MenuNivelCompletado: {fileID: 585238994}
   PuntosText: {fileID: 1128575642}
 --- !u!61 &1193474894

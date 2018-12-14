@@ -11,7 +11,6 @@ public class Ganar : MonoBehaviour {
 
 	void Start()
     {
-        PlayerPrefs.SetInt("Nivel" + (numeroNivel + 1), 1);
         PlayerPrefs.SetInt("Nivel" + numeroNivel + "_score", PuntosVida.puntos);
 		MenuNivelCompletado.SetActive(false);
 		PlayerPrefs.Save();
@@ -29,7 +28,8 @@ public class Ganar : MonoBehaviour {
        
     public void GanarPuntos()
     {
-		PuntosText.text = PuntosVida.puntos.ToString();
+        PlayerPrefs.SetInt("Nivel" + (numeroNivel + 1), 1);
+        PuntosText.text = PuntosVida.puntos.ToString();
         PlayerPrefs.SetInt("Nivel" + numeroNivel + "_score", PuntosVida.puntos);
 		PlayerPrefs.Save();
     }

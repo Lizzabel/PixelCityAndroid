@@ -49,8 +49,6 @@ public class BrayanMove : MonoBehaviour
     int comprobarSalto;
     private Vector2 touchOrigin = -Vector2.one; //ni idea que es esto
 	int CantidadDisparo;
-	public int VariableIsa;
-
 
 
 
@@ -158,14 +156,22 @@ public class BrayanMove : MonoBehaviour
                 }
             }
 
-			if (comprobarSalto == 0)
+			if (vertical > 0)
             {
-                if (vertical > 0)
+				if (comprobarSalto == 0)
                 {
 					comprobarSalto = 1;
                     animBrayan.SetBool("Ground", false);
-                    StartCoroutine(SaltarTime());
+					StartCoroutine(SaltarTime());
+					saltando = true;
 				}
+				else if (saltando == false)
+                {
+					if (animBrayan.GetCurrentAnimatorStateInfo(0).IsName("Brayan_Idle") || animBrayan.GetCurrentAnimatorStateInfo(0).IsName("Brayan_Run"))
+                    {
+                        comprobarSalto = 0;
+                    }
+                }
 			}
         }
 
@@ -195,31 +201,8 @@ public class BrayanMove : MonoBehaviour
 
 	IEnumerator SaltarTime()
 	{
-		StartCoroutine(ComprobadorTime());
-        yield return new WaitForSecondsRealtime(0.35f);
-		Saltar();
-		yield return new WaitForSecondsRealtime(1.5f);
-
-	}
-	IEnumerator ComprobadorTime()
-	{
-		yield return new WaitForSecondsRealtime(0.9f);
-        if (animBrayan.GetCurrentAnimatorStateInfo(0).IsName("BrayanRunJump"))
-        {
-            yield return new WaitForSecondsRealtime(0.2f);
-            comprobarSalto = 0;
-        }
-        if (animBrayan.GetCurrentAnimatorStateInfo(0).IsName("Brayan_Jump"))
-        {
-            yield return new WaitForSecondsRealtime(0.5f);
-            comprobarSalto = 0;
-        }
-
-	}
     
-	public void Saltar()
-	{
-        saltando = true;
+        yield return new WaitForSecondsRealtime(0.35f);
 
 		if (saltando)
         {
@@ -228,6 +211,7 @@ public class BrayanMove : MonoBehaviour
             RiBo2D_Brayan.AddForce(new Vector2(0, fuerzaSalto));
             animBrayan.SetBool("Ground", true);
         }
+
 	}
 
 	public void Ataque()
@@ -245,7 +229,7 @@ public class BrayanMove : MonoBehaviour
        
 	void Disparo()
 	{
-		if (VariableIsa == 0)
+		if (PowerUp.PowerActivo == 0)
 		{
 			Instantiate(ArepaPrefab, PosArepa.position, PosArepa.rotation);
 		}else
