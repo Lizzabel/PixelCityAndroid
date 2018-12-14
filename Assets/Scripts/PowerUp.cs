@@ -9,21 +9,32 @@ public class PowerUp : MonoBehaviour
 
     Collider2D colPower;
     SpriteRenderer rendererPower;
+	public bool EsPowerPuntos;
+	public GameObject powerX2;
+	public GameObject powerDisparo;
 
     void Start()
     {
         colPower = gameObject.GetComponent<Collider2D>();
         rendererPower = gameObject.GetComponent<SpriteRenderer>();
         PowerActivo=0;
-}
+		BoolPower = false;
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
-            rendererPower.enabled = false;
-            PowerActivo = 1;
-            BoolPower = true;
+			if (EsPowerPuntos == true)
+			{
+				BoolPower = true;//Puntos
+				powerX2.SetActive(true);
+			}else
+			{
+				PowerActivo = 1; //Balas
+				powerDisparo.SetActive(true);
+			}
+			rendererPower.enabled = false;
             StartCoroutine(BoolFalse());
             colPower.enabled = false;
         }
@@ -31,8 +42,16 @@ public class PowerUp : MonoBehaviour
     IEnumerator BoolFalse()
     {
         yield return new WaitForSecondsRealtime(5f);
-        BoolPower = false;
-        PowerActivo = 0;
+		if (EsPowerPuntos == true)
+        {
+			BoolPower = false;//Puntos
+			powerX2.SetActive(false);
+        }
+        else
+        {
+            PowerActivo = 0; //Balas
+			powerDisparo.SetActive(false);
+        }
         Destroy(gameObject);
     }
 }
