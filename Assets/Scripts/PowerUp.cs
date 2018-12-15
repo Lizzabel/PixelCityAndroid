@@ -9,12 +9,14 @@ public class PowerUp : MonoBehaviour
 
     Collider2D colPower;
     SpriteRenderer rendererPower;
+    public ParticleSystem particulas;
 	public bool EsPowerPuntos;
 	public GameObject powerX2;
 	public GameObject powerDisparo;
 
     void Start()
     {
+        particulas.gameObject.SetActive(false);
         colPower = gameObject.GetComponent<Collider2D>();
         rendererPower = gameObject.GetComponent<SpriteRenderer>();
         PowerActivo=0;
@@ -25,7 +27,8 @@ public class PowerUp : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-			if (EsPowerPuntos == true)
+            particulas.gameObject.SetActive(true);
+            if (EsPowerPuntos == true)
 			{
 				BoolPower = true;//Puntos
 				powerX2.SetActive(true);

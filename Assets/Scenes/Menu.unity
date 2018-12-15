@@ -1076,17 +1076,17 @@ MonoBehaviour:
   - NumeroNivel: 1
     Desbloqueado: 1
     Interactuable: 1
-    imagenNivel: {fileID: 21300002, guid: 5f726bae98c821e47911b5fb4ac30af9, type: 3}
+    imagenNivel: {fileID: 21300000, guid: 47f3a45aa7e120148a92c9d1ae8cdd62, type: 3}
     candado: {fileID: 0}
   - NumeroNivel: 2
     Desbloqueado: 0
     Interactuable: 0
-    imagenNivel: {fileID: 21300004, guid: 5f726bae98c821e47911b5fb4ac30af9, type: 3}
+    imagenNivel: {fileID: 21300000, guid: 7dc8eab3dc302ec4faec54c075d2529e, type: 3}
     candado: {fileID: 0}
   - NumeroNivel: 3
     Desbloqueado: 0
     Interactuable: 0
-    imagenNivel: {fileID: 21300008, guid: 5f726bae98c821e47911b5fb4ac30af9, type: 3}
+    imagenNivel: {fileID: 21300000, guid: 5e45a24635f55c448ab4ae90c2116882, type: 3}
     candado: {fileID: 0}
   - NumeroNivel: 4
     Desbloqueado: 0

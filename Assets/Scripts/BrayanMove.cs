@@ -49,6 +49,7 @@ public class BrayanMove : MonoBehaviour
     int comprobarSalto;
     private Vector2 touchOrigin = -Vector2.one; //ni idea que es esto
 	int CantidadDisparo;
+    public GameObject ImgSwipeUp;
 
 
 
@@ -62,6 +63,7 @@ public class BrayanMove : MonoBehaviour
         //offset = Camara.transform.position - Brayan.transform.position;
         BrayanPropiedades.Muerto = false;
         atacando = false;
+        ImgSwipeUp.SetActive(true);
     }
 
    
@@ -158,7 +160,8 @@ public class BrayanMove : MonoBehaviour
 
 			if (vertical > 0)
             {
-				if (comprobarSalto == 0)
+                ImgSwipeUp.SetActive(false);
+                if (comprobarSalto == 0)
                 {
 					comprobarSalto = 1;
                     animBrayan.SetBool("Ground", false);
