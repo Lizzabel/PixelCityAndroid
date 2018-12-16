@@ -88,7 +88,6 @@ public class PuntosEnemigo : MonoBehaviour {
 
     public void Correr()
     {
-        Debug.Log(cerca);
 		if (!BrayanPropiedades.Muerto)
 		{
             if (cerca)

@@ -10,7 +10,7 @@ public class Corazon : MonoBehaviour {
 
     private void Start()
     {
-        AudCorazon = GameObject.Find("g").GetComponent<AudioSource>();
+        AudCorazon = GameObject.Find("AudioCorazon").GetComponent<AudioSource>();
         particulas.gameObject.SetActive(false);
     }
 
@@ -18,7 +18,7 @@ public class Corazon : MonoBehaviour {
     {
         if (trigger.gameObject.tag == "Player")
         {
-            AudPower.Play();
+            AudCorazon.Play();
             PuntosVida.barraVida.fillAmount = PuntosVida.vida += vidaPerro;
             GetComponent<SpriteRenderer>().enabled = false;
             particulas.gameObject.SetActive(true);
