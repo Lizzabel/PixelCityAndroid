@@ -12,7 +12,10 @@ public class PowerUp : MonoBehaviour
     public ParticleSystem particulas;
 	public bool EsPowerPuntos;
 	public GameObject powerX2;
+    public GameObject barraX2;
 	public GameObject powerDisparo;
+    public GameObject BarraDisparo;
+    public AudioSource AudPower;
 
     void Start()
     {
@@ -27,15 +30,18 @@ public class PowerUp : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            AudPower.Play();
             particulas.gameObject.SetActive(true);
             if (EsPowerPuntos == true)
 			{
 				BoolPower = true;//Puntos
 				powerX2.SetActive(true);
+                barraX2.SetActive(true);
 			}else
 			{
 				PowerActivo = 1; //Balas
 				powerDisparo.SetActive(true);
+                BarraDisparo.SetActive(true);
 			}
 			rendererPower.enabled = false;
             StartCoroutine(BoolFalse());

@@ -21,9 +21,7 @@ public class BrayanMove : MonoBehaviour
 	[SerializeField]
 	private LayerMask QueEsSuelo;
 
-	private bool tocandoPiso;
-	private bool saltando;
-	private bool atacando;
+	private bool tocandoPiso, saltando, atacando;
 
 	[SerializeField]
 	float fuerzaSalto = 5f;
@@ -42,14 +40,14 @@ public class BrayanMove : MonoBehaviour
     //cambiar color boton
     public GameObject botonArepa;
     Image imagenArepa;
-    public Color arepaActivo;
-    public Color arepaInactivo;
+    public Color arepaActivo, arepaInactivo;
     public AudioSource AudGolpe;
-
-    int comprobarSalto;
+    public AudioSource AudSalto;
+    
     private Vector2 touchOrigin = -Vector2.one; //ni idea que es esto
-	int CantidadDisparo;
+	int CantidadDisparo, inicioSwipe, comprobarSalto;
     public GameObject ImgSwipeUp;
+	Animator animSwipe;
 
 
 
@@ -64,6 +62,8 @@ public class BrayanMove : MonoBehaviour
         BrayanPropiedades.Muerto = false;
         atacando = false;
         ImgSwipeUp.SetActive(true);
+		animSwipe = ImgSwipeUp.GetComponent<Animator>();
+		animSwipe.SetBool("activo", true);
     }
 
    
@@ -160,9 +160,10 @@ public class BrayanMove : MonoBehaviour
 
 			if (vertical > 0)
             {
-                ImgSwipeUp.SetActive(false);
                 if (comprobarSalto == 0)
                 {
+                    AudSalto.Play();
+					StartCoroutine(DesactivarSwipe());
 					comprobarSalto = 1;
                     animBrayan.SetBool("Ground", false);
 					StartCoroutine(SaltarTime());
@@ -179,6 +180,16 @@ public class BrayanMove : MonoBehaviour
         }
 
     }
+	IEnumerator DesactivarSwipe()
+	{
+		if (inicioSwipe == 0)
+		{
+			animSwipe.SetBool("activo", false);
+            yield return new WaitForSecondsRealtime(1.5f);
+            ImgSwipeUp.SetActive(false);
+			inicioSwipe = 1;
+		}
+	}
     
 	public void MovimientoDer()
 	{

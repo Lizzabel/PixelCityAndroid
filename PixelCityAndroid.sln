@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
+# Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PixelCityAndroid.Plugins", "PixelCityAndroid.Plugins.csproj", "{04264467-1F9C-81B1-1702-5971F8CAA2B5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PixelCityAndroid", "PixelCityAndroid.csproj", "{A2842204-FA6A-B4D9-42C4-2BCBA68C15FD}"

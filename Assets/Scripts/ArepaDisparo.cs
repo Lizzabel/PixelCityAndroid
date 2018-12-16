@@ -7,27 +7,38 @@ public class ArepaDisparo : MonoBehaviour {
 
 	public float velocidad;
 	public Rigidbody2D RB_Arepa;
+    public ParticleSystem particulas;
 	public int PuntosPorGolpe;
 	public static bool ContarGolpe;
     public int PuntosBajito =5;
-    bool bajito;
+    AudioSource auArepazo;
 
-   
-	void OnCollisionEnter2D(Collision2D collision)
+    bool bajito;
+    
+
+    void OnCollisionEnter2D(Collision2D collision)
 	{
 		if (collision.gameObject.tag == "Enemigo")
 		{
+            auArepazo.Play();
+            particulas.gameObject.SetActive(true);
+            Destroy(gameObject.GetComponent<CircleCollider2D>());
+            GetComponent<SpriteRenderer>().enabled = false;
             bajito = false;
 			ContarGolpe = true;
             Power();
-			Destroy(gameObject);
+            EsperarArepas();
 		}
 		if (collision.gameObject.tag == "EnemigoBajito")
 		{
+            auArepazo.Play();
+            particulas.gameObject.SetActive(true);
+            Destroy(gameObject.GetComponent<CircleCollider2D>());
+            GetComponent<SpriteRenderer>().enabled = false;
             bajito = true;
 			ContarGolpe = true;
             Power();
-            Destroy(gameObject);
+            EsperarArepas();
 		}
 	}
     public void Power()
@@ -56,9 +67,10 @@ public class ArepaDisparo : MonoBehaviour {
         }
     }
 
-	void Start () {
-
-		if (!BrayanMove.LadoDerecho)
+	void Start ()
+    {
+        auArepazo = GameObject.Find("AudioArepazo").GetComponent<AudioSource>();
+        if (!BrayanMove.LadoDerecho)
 		{
 			RB_Arepa.AddForce(new Vector2(velocidad, 0));
 		}else
@@ -75,4 +87,9 @@ public class ArepaDisparo : MonoBehaviour {
 		Destroy(gameObject);
 	}
 
+    IEnumerator EsperarArepas()
+    {
+        yield return new WaitForSecondsRealtime(0.3f);
+        Destroy(gameObject);
+    }
 }
