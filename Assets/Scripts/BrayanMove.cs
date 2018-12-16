@@ -45,9 +45,10 @@ public class BrayanMove : MonoBehaviour
     public AudioSource AudSalto;
     
     private Vector2 touchOrigin = -Vector2.one; //ni idea que es esto
-	int CantidadDisparo, inicioSwipe, comprobarSalto;
+	int CantidadDisparo, comprobarSalto;
     public GameObject ImgSwipeUp;
 	Animator animSwipe;
+	public int NumeroDeNivel;
 
 
 
@@ -61,9 +62,12 @@ public class BrayanMove : MonoBehaviour
         //offset = Camara.transform.position - Brayan.transform.position;
         BrayanPropiedades.Muerto = false;
         atacando = false;
-        ImgSwipeUp.SetActive(true);
-		animSwipe = ImgSwipeUp.GetComponent<Animator>();
-		animSwipe.SetBool("activo", true);
+		if (NumeroDeNivel == 1)
+		{
+			ImgSwipeUp.SetActive(true);
+			animSwipe = ImgSwipeUp.GetComponent<Animator>();
+            animSwipe.SetBool("activo", true);
+		}
     }
 
    
@@ -162,8 +166,11 @@ public class BrayanMove : MonoBehaviour
             {
                 if (comprobarSalto == 0)
                 {
-                    AudSalto.Play();
-					StartCoroutine(DesactivarSwipe());
+					if(NumeroDeNivel == 1)
+					{
+						StartCoroutine(DesactivarSwipe());
+					}
+					AudSalto.Play();
 					comprobarSalto = 1;
                     animBrayan.SetBool("Ground", false);
 					StartCoroutine(SaltarTime());
@@ -182,13 +189,10 @@ public class BrayanMove : MonoBehaviour
     }
 	IEnumerator DesactivarSwipe()
 	{
-		if (inicioSwipe == 0)
-		{
-			animSwipe.SetBool("activo", false);
-            yield return new WaitForSecondsRealtime(1.5f);
-            ImgSwipeUp.SetActive(false);
-			inicioSwipe = 1;
-		}
+		animSwipe.SetBool("activo", false);
+        yield return new WaitForSecondsRealtime(1.5f);
+        ImgSwipeUp.SetActive(false);
+		NumeroDeNivel = 0;
 	}
     
 	public void MovimientoDer()

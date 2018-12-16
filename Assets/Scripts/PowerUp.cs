@@ -7,18 +7,29 @@ public class PowerUp : MonoBehaviour
     public static bool BoolPower = false;
     public static int PowerActivo;
 
+	GameObject powerX2;
+    GameObject barraX2;
+    GameObject powerDisparo;
+    GameObject BarraDisparo;
+    AudioSource AudPower;
+
     Collider2D colPower;
     SpriteRenderer rendererPower;
     public ParticleSystem particulas;
 	public bool EsPowerPuntos;
-	public GameObject powerX2;
-    public GameObject barraX2;
-	public GameObject powerDisparo;
-    public GameObject BarraDisparo;
-    public AudioSource AudPower;
 
     void Start()
     {
+		powerX2 = GameObject.Find("Canvas/PowerUps/PowerUpX2");
+
+		barraX2 = GameObject.Find("Canvas/PowerUps/BarraRoja/BarPwr x2");
+
+		powerDisparo = GameObject.Find("Canvas/PowerUps/PowerUpDisparo");
+
+		BarraDisparo = GameObject.Find("Canvas/PowerUps/BarraVerde/BarPwr Disparo");
+
+		AudPower = GameObject.Find("AudioPower").GetComponent<AudioSource>();
+        //
         particulas.gameObject.SetActive(false);
         colPower = gameObject.GetComponent<Collider2D>();
         rendererPower = gameObject.GetComponent<SpriteRenderer>();

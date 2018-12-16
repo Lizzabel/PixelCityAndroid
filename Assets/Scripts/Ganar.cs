@@ -33,4 +33,23 @@ public class Ganar : MonoBehaviour {
         PlayerPrefs.SetInt("Nivel" + numeroNivel + "_score", PuntosVida.puntos);
 		PlayerPrefs.Save();
     }
+	public void SiguienteNivel()
+	{
+		if (numeroNivel == 1)
+		{
+			Initiate.Fade("Nivel2",Color.black, 1.0f);
+		}
+		else if (numeroNivel == 2)
+		{
+			Initiate.Fade("Nivel3", Color.black, 1.0f);
+		} 
+		else if(numeroNivel == 3)
+		{
+			Initiate.Fade("Nivel4", Color.black, 1.0f);
+		}
+		else
+		{
+			Initiate.Fade("Menu", Color.black, 1.0f);
+		}
+	}
 }
