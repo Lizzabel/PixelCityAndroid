@@ -35,6 +35,7 @@ public class Ganar : MonoBehaviour {
     }
 	public void SiguienteNivel()
 	{
+		Time.timeScale = 1f;
 		if (numeroNivel == 1)
 		{
 			Initiate.Fade("Nivel2",Color.black, 1.0f);

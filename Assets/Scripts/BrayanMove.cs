@@ -50,6 +50,8 @@ public class BrayanMove : MonoBehaviour
 	Animator animSwipe;
 	public int NumeroDeNivel;
 
+    int horizontal = 0;
+    int vertical = 0;
 
 
     void Start()
@@ -72,9 +74,6 @@ public class BrayanMove : MonoBehaviour
 
    
     void Update() {
-
-		int horizontal = 0;
-        int vertical = 0;
 
 		if (!BrayanPropiedades.Muerto)
 		{
@@ -228,6 +227,7 @@ public class BrayanMove : MonoBehaviour
             saltando = false;
             RiBo2D_Brayan.AddForce(new Vector2(0, fuerzaSalto));
             animBrayan.SetBool("Ground", true);
+			vertical = 0;
         }
 
 	}

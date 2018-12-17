@@ -160,7 +160,6 @@ GameObject:
   - component: {fileID: 114022617304217444}
   - component: {fileID: 114712878828011442}
   - component: {fileID: 114606069904823450}
-  - component: {fileID: 114782738746218428}
   m_Layer: 5
   m_Name: BotonNiveles
   m_TagString: BotonNiveles
@@ -311,16 +310,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.36764705, b: 0.36764705, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300006, guid: 5f726bae98c821e47911b5fb4ac30af9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: acdd04cd7bac94b2dbd50981b9f7907e, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -338,7 +337,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
-  m_EffectDistance: {x: -12.28, y: -10}
+  m_EffectDistance: {x: -0.61, y: -10}
   m_UseGraphicAlpha: 1
 --- !u!114 &114584048625104016
 MonoBehaviour:
@@ -480,20 +479,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &114782738746218428
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1884938782073078}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1573420865, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
-  m_EffectDistance: {x: -12.28, y: -10}
-  m_UseGraphicAlpha: 1
 --- !u!114 &114903572043359374
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -666,8 +651,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7, y: 0.000030517578}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -6.2, y: 0.000030517578}
+  m_SizeDelta: {x: 89.08, y: 89.08}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224311651307326958
 RectTransform:
@@ -704,8 +689,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 127, y: 0.000030517578}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 100.7, y: 0.000030517578}
+  m_SizeDelta: {x: 89.08, y: 89.08}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224517546790939228
 RectTransform:
@@ -722,8 +707,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 126.99997, y: 0.000030517578}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 100.7, y: 0.000030517578}
+  m_SizeDelta: {x: 89.08, y: 89.08}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224521559228756370
 RectTransform:
@@ -740,8 +725,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6.9999847, y: 0.000022888184}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -6.2, y: 0.000022888184}
+  m_SizeDelta: {x: 89.08, y: 89.08}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224665668570274238
 RectTransform:
@@ -759,7 +744,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 7, y: 307}
-  m_SizeDelta: {x: 304, y: 308}
+  m_SizeDelta: {x: 147.02, y: 149}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224804580877773414
 RectTransform:
@@ -777,7 +762,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -113.899994, y: 0.000022888184}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 89.08, y: 89.08}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224855464391985944
 RectTransform:
@@ -795,5 +780,5 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -113.9, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 89.08, y: 89.08}
   m_Pivot: {x: 0.5, y: 0.5}

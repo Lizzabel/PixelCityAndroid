@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class GameOver : MonoBehaviour {
     int tiempo;
     public Text elTexto;
+	public int numeroNivel;
 
 
 	void Start () {
@@ -31,6 +32,22 @@ public class GameOver : MonoBehaviour {
 
     public void Si()
     {
-        Initiate.Fade("Nivel1", Color.black, 1f);
+        if (numeroNivel == 1)
+        {
+            Initiate.Fade("Nivel2", Color.black, 1.0f);
+        }
+        else if (numeroNivel == 2)
+        {
+            Initiate.Fade("Nivel3", Color.black, 1.0f);
+        }
+        else if (numeroNivel == 3)
+        {
+            Initiate.Fade("Nivel4", Color.black, 1.0f);
+        }
+        else
+        {
+            Initiate.Fade("Menu", Color.black, 1.0f);
+        }
+
     }
 }
