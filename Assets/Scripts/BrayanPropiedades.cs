@@ -19,7 +19,7 @@ public class BrayanPropiedades : MonoBehaviour {
 
 	private void Start()
 	{
-		if (nivel == 2)
+		if (nivel == 2 || nivel == 0)
 		{
 			TimerObject.SetActive(true);
 			elTiempo = TimerObject.GetComponent<Text>();
