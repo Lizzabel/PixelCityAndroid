@@ -69,12 +69,12 @@ public class SelectorNiveles : MonoBehaviour {
                 boton.Estrella1.SetActive(true);
             }
 
-            if (PlayerPrefs.GetInt("Nivel" + boton.NumeroNivel + "_score") >= 100)
+            if (PlayerPrefs.GetInt("Nivel" + boton.NumeroNivel + "_score") >= 80)
             {
                 boton.Estrella2.SetActive(true);
             }
 
-            if (PlayerPrefs.GetInt("Nivel" + boton.NumeroNivel + "_score") >= 200)
+            if (PlayerPrefs.GetInt("Nivel" + boton.NumeroNivel + "_score") >= 130)
             {
                 boton.Estrella3.SetActive(true);
             }

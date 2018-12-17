@@ -75,6 +75,11 @@ public class BrayanMove : MonoBehaviour
    
     void Update() {
 
+		horizontal = (int)(Input.GetAxisRaw("Horizontal"));
+
+        //Get input from the input manager, round it to an integer and store in vertical to set y axis move direction
+        vertical = (int)(Input.GetAxisRaw("Vertical"));
+
 		if (!BrayanPropiedades.Muerto)
 		{
 			if (!atacando)
@@ -82,19 +87,15 @@ public class BrayanMove : MonoBehaviour
 				if (Der == true)
 				{
                     RiBo2D_Brayan.velocity = new Vector2(Velocidad, RiBo2D_Brayan.velocity.y);
-                    if (LadoDerecho)
-					{
-						Girar();
-					}
+					Brayan.transform.localScale = new Vector2(3.0f, Brayan.transform.localScale.y);
+					LadoDerecho = true;
                 }
 
 				if (Izq == true)
 				{
 					RiBo2D_Brayan.velocity = new Vector2(-Velocidad, RiBo2D_Brayan.velocity.y);
-					if (!LadoDerecho)
-					{
-						Girar();
-					}
+					Brayan.transform.localScale = new Vector2(-3.0f, Brayan.transform.localScale.y);
+					LadoDerecho = false;
                 }
 			}
 			animBrayan.SetBool("Run", Anim);
@@ -110,15 +111,6 @@ public class BrayanMove : MonoBehaviour
             ////////////////////////////////////////// TOUCH
             
             //Get input from the input manager, round it to an integer and store in horizontal to set x axis move direction
-            horizontal = (int)(Input.GetAxisRaw("Horizontal"));
-
-            //Get input from the input manager, round it to an integer and store in vertical to set y axis move direction
-            vertical = (int)(Input.GetAxisRaw("Vertical"));
-
-            if (horizontal != 0)
-            {
-                vertical = 0;
-            }
 
             if (Input.touchCount > 0)
             {
@@ -148,7 +140,7 @@ public class BrayanMove : MonoBehaviour
 
                         //Set touchOrigin.x to -1 so that our else if statement will evaluate false and not repeat immediately.
                         touchOrigin.x = -1;
-                        touchOrigin.y = -1; //yop
+                        //touchOrigin.y = -1; //yop
 
                         //Check if the difference along the x axis is greater than the difference along the y axis.
                         if (Mathf.Abs(x) > Mathf.Abs(y))
@@ -160,10 +152,8 @@ public class BrayanMove : MonoBehaviour
                     }
                 }
             }
-
-			if (vertical > 0)
-            {
-                if (comprobarSalto == 0)
+            
+				if (comprobarSalto == 0 && vertical > 0f)
                 {
 					if(NumeroDeNivel == 1)
 					{
@@ -182,7 +172,6 @@ public class BrayanMove : MonoBehaviour
                         comprobarSalto = 0;
                     }
                 }
-			}
         }
 
     }
@@ -205,7 +194,7 @@ public class BrayanMove : MonoBehaviour
 		Izq = !Izq;
 		Anim = !Anim;
     }
-
+    /*
     public void Girar()
 	{ 
 		LadoDerecho = !LadoDerecho;
@@ -214,7 +203,7 @@ public class BrayanMove : MonoBehaviour
 
 		Brayan.transform.localScale = ValorEscala;
 
-	}
+	}*/
 
 	IEnumerator SaltarTime()
 	{
@@ -227,7 +216,6 @@ public class BrayanMove : MonoBehaviour
             saltando = false;
             RiBo2D_Brayan.AddForce(new Vector2(0, fuerzaSalto));
             animBrayan.SetBool("Ground", true);
-			vertical = 0;
         }
 
 	}

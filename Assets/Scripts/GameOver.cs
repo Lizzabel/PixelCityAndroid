@@ -34,15 +34,15 @@ public class GameOver : MonoBehaviour {
     {
         if (numeroNivel == 1)
         {
-            Initiate.Fade("Nivel2", Color.black, 1.0f);
+            Initiate.Fade("Nivel1", Color.black, 1.0f);
         }
         else if (numeroNivel == 2)
         {
-            Initiate.Fade("Nivel3", Color.black, 1.0f);
+            Initiate.Fade("Nivel2", Color.black, 1.0f);
         }
         else if (numeroNivel == 3)
         {
-            Initiate.Fade("Nivel4", Color.black, 1.0f);
+            Initiate.Fade("Nivel3", Color.black, 1.0f);
         }
         else
         {
